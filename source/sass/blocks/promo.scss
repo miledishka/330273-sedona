@@ -1,0 +1,19 @@
+.promo {
+  &__title {
+    text-transform: uppercase;
+
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &__text {
+    text-transform: uppercase;
+
+    @include text(440, normal, 14px, 21px, $text-gray);
+  }
+
+  &__btn {
+    background-color: $bg-blue;
+
+    @include text(700, normal, 21px, 26px, $bg-white);
+  }
+}

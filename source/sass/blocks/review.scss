@@ -1,0 +1,11 @@
+.review {
+  &__title {
+    text-transform: uppercase;
+
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &__text {
+    @include text(400, normal, 14px, 24px, $text-gray);
+  }
+}

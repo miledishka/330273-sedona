@@ -1,0 +1,5 @@
+.form-submit__btn {
+  background-color: $bg-blue;
+
+  @include text(700, normal, 21px, 26px, $bg-white);
+}

@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+}
+
+.page-footer {
+  &__hashtag {
+    text-transform: uppercase;
+
+    @include text(bold, normal, 21px, 26px, $text-black);
+  }
+
+  &__copyright {
+    text-transform: uppercase;
+
+    @include text(400, normal, 14px, 26px, $text-gray);
+  }
+}

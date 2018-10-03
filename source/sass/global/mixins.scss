@@ -1,0 +1,8 @@
+// Текст
+@mixin text($font-weight, $font-style, $font-size, $line-height, $color: null) {
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}

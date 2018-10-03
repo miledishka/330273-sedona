@@ -1,0 +1,28 @@
+.picture {
+  padding: 20px 20px 20px 20px;
+
+  &__image {
+    display: block;
+  }
+
+  &__title {
+    text-transform: uppercase;
+
+    @include text(700, normal, 14px, 24px, $text-black);
+  }
+
+  &__text {
+    @include text(400, normal, 14px, 24px, $text-gray);
+  }
+
+  &__likes {
+    display: flex;
+  }
+
+  &__count {
+    margin-left: 13px;
+    margin-top: 1px;
+
+    @include text(700, normal, 14px, 24px, $text-black);
+  }
+}

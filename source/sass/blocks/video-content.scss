@@ -1,0 +1,15 @@
+.video-content {
+  position: relative;
+
+  &__footer {
+    text-transform: uppercase;
+  }
+
+  &__title {
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &__text {
+    @include text(400, normal, 14px, 24px, $text-gray);
+  }
+}

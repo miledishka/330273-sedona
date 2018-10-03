@@ -1,0 +1,13 @@
+.description {
+  &___title {
+    margin: 0 auto;
+    text-transform: uppercase;
+
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &___text {
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+}

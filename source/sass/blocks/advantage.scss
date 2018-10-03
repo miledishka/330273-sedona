@@ -1,0 +1,59 @@
+.advantage {
+  display: flex;
+  flex-direction: column;
+
+  &__sity {
+    text-transform: uppercase;
+    background-color: $bg-blue;
+  }
+
+  &__title__sity {
+    text-transform: uppercase;
+
+    @include text(700, normal, 18px, 26px, $text-white);
+  }
+
+  &__text--number-white {
+    text-transform: uppercase;
+
+    @include text(440, normal, 14px, 21px, $text-white);
+  }
+
+  &__text-white {
+    text-transform: uppercase;
+
+    @include text(440, normal, 14px, 21px, $text-white);
+  }
+
+  &__title {
+    text-transform: uppercase;
+
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &__text--number {
+    text-transform: uppercase;
+
+    @include text(440, normal, 14px, 21px, $text-gray);
+  }
+
+  &__text {
+    text-transform: uppercase;
+
+    @include text(440, normal, 14px, 21px, $text-gray);
+  }
+}
+
+.service {
+  &__title {
+    text-transform: uppercase;
+
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &__text {
+    text-transform: uppercase;
+
+    @include text(440, normal, 14px, 21px, $text-gray);
+  }
+}

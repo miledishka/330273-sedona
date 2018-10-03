@@ -1,0 +1,38 @@
+.form-section {
+  &__item__legend__title {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &__meet {
+    background-color: $bg-input;
+
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &__field {
+    @include text(400, normal, 14px, 26px, $text-gray);
+  }
+
+  &__contact {
+    background-color: $bg-input;
+
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &__field--impression {
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &__field--landmarks {
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+
+  &__item__comment__textarea {
+    background-color: $bg-input;
+
+    @include text(700, normal, 18px, 26px, $text-black);
+  }
+}
