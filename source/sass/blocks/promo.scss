@@ -13,7 +13,11 @@
 
   &__btn {
     background-color: $bg-blue;
-
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
     @include text(700, normal, 21px, 26px, $bg-white);
   }
 }
