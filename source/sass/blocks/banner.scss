@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.banner img{
+.banner img {
   z-index: 0;
 }
 
@@ -14,6 +14,6 @@
   z-index: 1;
   margin-top: -200px;
   margin-left: 200px;
-
-  @include text(700, normal, 80px, 26px, $text-white);
-  }
+  font: 700 80px/26px "pt sans", sans-serif;
+  color: $text-white;
+}

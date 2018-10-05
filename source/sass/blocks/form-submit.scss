@@ -4,5 +4,6 @@
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  @include text(700, normal, 21px, 26px, $bg-white);
+  font: 700 21px/26px "pt sans", sans-serif;
+  color: $bg-white;
 }

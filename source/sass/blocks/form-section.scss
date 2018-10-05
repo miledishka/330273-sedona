@@ -2,37 +2,46 @@
   &__item__legend__title {
     padding-bottom: 10px;
     text-transform: uppercase;
-
-    @include text(700, normal, 18px, 26px, $text-black);
+    font: 700 18px/26px "pt sans", sans-serif;
+    color: $text-black;
   }
 
   &__meet {
     background-color: $bg-input;
-
-    @include text(700, normal, 18px, 26px, $text-black);
+    font: 700 18px/26px "pt sans", sans-serif;
+    color: $text-black;
   }
 
   &__field {
-    @include text(400, normal, 14px, 26px, $text-gray);
+    font: 700 18px/26px "pt sans", sans-serif;
+    color: $text-black;
+
+    &__label {
+      text-transform: uppercase;
+      font: 400 14px/26px "pt sans", sans-serif;
+      color: $text-gray;
+    }
   }
 
   &__contact {
     background-color: $bg-input;
-
-    @include text(700, normal, 18px, 26px, $text-black);
+    font: 700 18px/26px "pt sans", sans-serif;
+    color: $text-black;
   }
 
-  &__field--impression {
-    @include text(700, normal, 18px, 26px, $text-black);
+  &__impression {
+    font: 700 18px/26px "pt sans", sans-serif;
+    color: $text-black;
   }
 
-  &__field--landmarks {
-    @include text(700, normal, 18px, 26px, $text-black);
+  &__landmarks {
+    font: 700 18px/26px "pt sans", sans-serif;
+    color: $text-black;
   }
 
   &__item__comment__textarea {
     background-color: $bg-input;
-
-    @include text(700, normal, 18px, 26px, $text-black);
+    font: 700 18px/26px "pt sans", sans-serif;
+    color: $text-black;
   }
 }

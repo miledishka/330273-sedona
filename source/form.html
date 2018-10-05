@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона - оставьте свой отзыв!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -48,15 +50,15 @@
           <div class="form-section__item">
             <div class="form-section__item__legend__title font-title">Представьтесь:</div>
             <div class="form-section__field">
-              <label for="name">Имя</label>
+              <label for="name" class="form-section__field__label">Имя</label>
               <input class="form-section__meet" type="text" placeholder="Петр" id="name" required>
             </div>
             <div class="form-section__field">
-              <label for="surname">Фамилия</label>
+              <label for="surname" class="form-section__field__label">Фамилия</label>
               <input class="form-section__meet" type="text" placeholder="Иванов" id="surname" required>
             </div>
             <div class="form-section__field">
-              <label for="middle-name">Отчество</label>
+              <label for="middle-name" class="form-section__field__label">Отчество</label>
               <input class="form-section__meet" type="text" placeholder="Александрович" id="middle-name" required>
             </div>
           </div>
@@ -65,14 +67,18 @@
               <div class="form-section__item__legend__title font-title">Контактная информация:</div>
             </div>
             <div class="form-section__field form-section__field--contact">
-              <label for="phone">Контактный <span class="form-section__required">телефон</span>:</label>
+              <label for="phone" class="form-section__field__label">
+                <span class="form-section__required">Контактный телефон</span>:
+              </label>
               <div class="form-section__wrap">
                 <input class="form-section__contact" type="text" placeholder="Введите телефон" id="phone" required>
                 <div class="form-section__icon form-section__icon--phone"></div>
               </div>
             </div>
             <div class="form-section__field form-section__field--contact">
-              <label for="email">Электронная <span class="form-section__required">почта</span>:</label>
+              <label for="email" class="form-section__field__label">
+                <span class="form-section__required">Электронная почта</span>:
+              </label>
               <div class="form-section__wrap">
                 <input class="form-section__contact" type="text" placeholder="Введите e-mail" id="email" required>
                 <div class="form-section__icon form-section__icon--email"></div>
@@ -119,7 +125,7 @@
           </div>
           <div class="form-section__item">
             <div class="form-section__item__legend">
-              <div class="form-section__item__legend__title font-title">Опишите свои эмоции:</div>
+              <div class="form-section__item__legend__title">Опишите свои эмоции:</div>
             </div>
             <div class="form-section__item__comment">
               <textarea class="form-section__item__comment__textarea" placeholder="Опишите подробно все свои восторги"></textarea>

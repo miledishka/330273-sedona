@@ -5,55 +5,24 @@
   &__sity {
     text-transform: uppercase;
     background-color: $bg-blue;
-  }
 
-  &__title__sity {
-    text-transform: uppercase;
-
-    @include text(700, normal, 18px, 26px, $text-white);
-  }
-
-  &__text--number-white {
-    text-transform: uppercase;
-
-    @include text(440, normal, 14px, 21px, $text-white);
-  }
-
-  &__text-white {
-    text-transform: uppercase;
-
-    @include text(440, normal, 14px, 21px, $text-white);
+    &--white {
+      color: $text-white;
+    }
   }
 
   &__title {
     text-transform: uppercase;
-
-    @include text(700, normal, 18px, 26px, $text-black);
-  }
-
-  &__text--number {
-    text-transform: uppercase;
-
-    @include text(440, normal, 14px, 21px, $text-gray);
+    font: 700 18px/26px "pt sans", sans-serif;
   }
 
   &__text {
     text-transform: uppercase;
+    font: 440 14px/21px "pt sans", sans-serif;
+    color: $text-gray;
 
-    @include text(440, normal, 14px, 21px, $text-gray);
-  }
-}
-
-.service {
-  &__title {
-    text-transform: uppercase;
-
-    @include text(700, normal, 18px, 26px, $text-black);
-  }
-
-  &__text {
-    text-transform: uppercase;
-
-    @include text(440, normal, 14px, 21px, $text-gray);
+    &--white {
+      color: $text-white;
+    }
   }
 }

@@ -7,12 +7,13 @@
 
   &__title {
     text-transform: uppercase;
-
-    @include text(700, normal, 14px, 24px, $text-black);
+    font: 700 14px/24px "pt sans", sans-serif;
+    color: $bg-black;
   }
 
   &__text {
-    @include text(400, normal, 14px, 24px, $text-gray);
+    font: 400 14px/24px "pt sans", sans-serif;
+    color: $text-gray;
   }
 
   &__likes {
@@ -22,7 +23,7 @@
   &__count {
     margin-left: 13px;
     margin-top: 1px;
-
-    @include text(700, normal, 14px, 24px, $text-black);
+    font: 700 14px/24px "pt sans", sans-serif;
+    color: $text-black;
   }
 }
