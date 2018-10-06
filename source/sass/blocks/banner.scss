@@ -1,0 +1,19 @@
+.banner {
+  position: relative;
+}
+
+.banner img {
+  z-index: 0;
+}
+
+.banner__caption {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  margin-top: -200px;
+  margin-left: 200px;
+  font: 700 80px/26px "pt sans", sans-serif;
+  color: $text-white;
+}

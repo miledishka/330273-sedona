@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: фото Седоны</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 </head>
 
 <body>
@@ -24,7 +27,7 @@
             <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/15">HTML Academy</a>
           </li>
           <a class="page-header__logo">
-            <img class="page-header__logo-image" src="http://placehold.it/150x100" width="226" height="30" alt="Логотип">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg"  width="100" height="80" alt="Логотип">
           </a>
         </ul>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -32,9 +35,8 @@
       </div>
     </nav>
     <section class="banner">
-      <div class="visualy-hidden">
-        <p class="banner__caption">Sedona</p>
-      </div>
+      <img  src="img/bg-back-mobile@1x.jpg" alt="банер">
+      <div class="banner__caption">Sedona</div>
     </section>
   </header>
   <main class="page-main">
@@ -46,7 +48,7 @@
       <article class="picture">
         <div class="picture picture__image">
           <a class="picture__link" href="#">
-            <img width="150" height="100" src="http://placehold.it/150x100" alt="Sedona">
+            <img src="img/photo-sunset-mobile@1x.jpg" alt="Фото">
           </a>
         </div>
         <section class="picture__footer">
@@ -55,7 +57,7 @@
             <p class="picture__text">Автор фото: Борис</p>
           </div>
           <div class="picture__likes">
-            <button class="picture__like-button" type="submit"></button>
+            <button class="picture__like-button" type="submit"><img src="img/icon-like.svg" alt="Лайк"></button>
             <span class="picture__count">1350</span>
           </div>
         </section>
@@ -63,7 +65,7 @@
       <article class="picture">
         <div class="picture picture__image">
           <a class="picture__link" href="#">
-            <img width="150" height="100" src="http://placehold.it/150x100" alt="Sedona">
+            <img src="img/photo-cactus-mobile@1x.jpg" alt="Фото">
           </a>
         </div>
         <section class="picture__footer">
@@ -72,7 +74,7 @@
             <p class="picture__text">Автор фото: Сергей</p>
           </div>
           <div class="picture__likes">
-            <button class="picture__like-button" type="submit"></button>
+            <button class="picture__like-button" type="submit"><img src="img/icon-like.svg" alt="Лайк"></button>
             <span class="picture__count">143</span>
           </div>
         </section>
@@ -80,7 +82,7 @@
       <article class="picture">
         <div class="picture picture__image">
           <a class="picture__link" href="#">
-            <img width="150" height="100" src="http://placehold.it/150x100" alt="Sedona">
+            <img src="img/photo-roads-mobile@1x.jpg" alt="Фото">
           </a>
         </div>
         <section class="picture__footer">
@@ -89,7 +91,7 @@
             <p class="picture__text">Автор фото: Петр</p>
           </div>
           <div class="picture__likes">
-            <button class="picture__like-button" type="submit"></button>
+            <button class="picture__like-button" type="submit"><img src="img/icon-like.svg" alt="Лайк"></button>
             <span class="picture__count">96</span>
           </div>
         </section>
@@ -97,7 +99,7 @@
       <article class="picture">
         <div class="picture picture__image">
           <a class="picture__link" href="#">
-            <img width="150" height="100" src="http://placehold.it/150x100" alt="Sedona">
+            <img src="img/photo-bridge-mobile@1x.jpg" alt="Фото">
           </a>
         </div>
         <section class="picture__footer">
@@ -106,7 +108,7 @@
             <p class="picture__text">Автор фото: Антон</p>
           </div>
           <div class="picture__likes">
-            <button class="picture__like-button" type="submit"></button>
+            <button class="picture__like-button" type="submit"><img src="img/icon-like.svg" alt="Лайк"></button>
             <span class="picture__count">254</span>
           </div>
         </section>
@@ -118,28 +120,24 @@
         <p class="video-content__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       </section>
       <div class="video-content__video-clip">
-        <img width="150" height="100" src="http://placehold.it/150x100" alt="Sedona">
+        <img src="img/video-mobile@1x.jpg" alt="Видео">
       </div>
     </article>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <h2 class="page-footer__hashtag font-title">#visitsedona</h2>
-      <ul class="social list-style-none">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">twitter</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">youtube</a>
-        </li>
-      </ul>
+    <div class="social">
+      <div class="social__item">
+        <a class="social__btn social__btn--twitter" href="#">Твиттер</a>
+        <a class="social__btn social__btn--facebook" href="#">Фейсбук</a>
+        <a class="social__btn social__btn--youtube" href="#">Ютуб</a>
+      </div>
+    </div>
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" alt="HTML Academy"></a>
     </div>
   </footer>
 

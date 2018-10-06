@@ -1,0 +1,16 @@
+.main-nav__list {
+  background-color: $bg-blue-nav;
+}
+
+.site-list__item {
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 0 rgba(225, 225, 225, 0.4), 0 1px 0 0 $bg-blue;
+
+  a {
+    color: $text-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 700 21px/40px "pt sans", sans-serif;
+  }
+}

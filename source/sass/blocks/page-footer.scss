@@ -1,0 +1,13 @@
+.page-footer {
+  &__hashtag {
+    text-transform: uppercase;
+    font: bold 21px/26px "pt sans", sans-serif;
+    color: $text-black;
+  }
+
+  &__copyright {
+    text-transform: uppercase;
+    font: 400 14px/26px "pt sans", sans-serif;
+    color: $text-gray;
+  }
+}

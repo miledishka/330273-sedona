@@ -1,0 +1,28 @@
+.advantage {
+  display: flex;
+  flex-direction: column;
+
+  &__sity {
+    text-transform: uppercase;
+    background-color: $bg-blue;
+
+    &--white {
+      color: $text-white;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font: 700 18px/26px "pt sans", sans-serif;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font: 440 14px/21px "pt sans", sans-serif;
+    color: $text-gray;
+
+    &--white {
+      color: $text-white;
+    }
+  }
+}

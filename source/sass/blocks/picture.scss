@@ -1,0 +1,29 @@
+.picture {
+  padding: 20px 20px 20px 20px;
+
+  &__image {
+    display: block;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font: 700 14px/24px "pt sans", sans-serif;
+    color: $bg-black;
+  }
+
+  &__text {
+    font: 400 14px/24px "pt sans", sans-serif;
+    color: $text-gray;
+  }
+
+  &__likes {
+    display: flex;
+  }
+
+  &__count {
+    margin-left: 13px;
+    margin-top: 1px;
+    font: 700 14px/24px "pt sans", sans-serif;
+    color: $text-black;
+  }
+}

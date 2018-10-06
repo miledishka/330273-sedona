@@ -1,0 +1,13 @@
+.service {
+  &__title {
+    text-transform: uppercase;
+    font: 700 18px/26px "pt sans", sans-serif;
+    color: $text-black;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font: 440 14px/21px "pt sans", sans-serif;
+    color: $text-gray;
+  }
+}

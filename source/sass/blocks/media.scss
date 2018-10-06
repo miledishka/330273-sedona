@@ -1,0 +1,14 @@
+.media {
+  position: relative;
+  text-transform: uppercase;
+
+  &__title {
+    font: 700 18px/26px "pt sans", sans-serif;
+    color: $text-black;
+  }
+
+  &__text {
+    font: 400 14px/24px "pt sans", sans-serif;
+    color: $text-gray;
+  }
+}

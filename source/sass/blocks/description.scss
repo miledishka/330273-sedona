@@ -1,0 +1,13 @@
+.description {
+  &___title {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font: 700 18px/26px "pt sans", sans-serif;
+    color: $text-black;
+  }
+
+  &___text {
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+}

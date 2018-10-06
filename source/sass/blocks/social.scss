@@ -1,0 +1,50 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__btn {
+    display: inline-block;
+    opacity: 0.8;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+    margin-right: 5px;
+    background-color: $bg-blue;
+
+    &--twitter {
+      background-image: url("../img/icon-twitter.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 3px solid $bg-blue;
+      background-clip: padding-box;
+    }
+
+    &--facebook {
+      background-image: url("../img/icon-facebook.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 3px solid $bg-blue;
+      background-clip: padding-box;
+    }
+
+    &--youtube {
+      background-image: url("../img/icon-youtube.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 3px solid $bg-blue;
+      background-clip: padding-box;
+    }
+  }
+
+  &__btn:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+  }
+
+  &__btn:active {
+    opacity: 0.8;
+  }
+}
