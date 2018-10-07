@@ -11,3 +11,10 @@
     color: $text-gray;
   }
 }
+
+@media (min-width: 768px) {
+  .service {
+    display: flex;
+    justify-content: space-around;
+  }
+}

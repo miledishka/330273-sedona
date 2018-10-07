@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  &__sity {
+  &__city {
     text-transform: uppercase;
     background-color: $bg-blue;
 
@@ -23,6 +23,32 @@
 
     &--white {
       color: $text-white;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .advantage {
+    &__info {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        list-style-type: none;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__second {
+      order: 1;
+    }
+
+    &__first {
+      order: 0;
     }
   }
 }

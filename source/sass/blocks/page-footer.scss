@@ -1,4 +1,9 @@
 .page-footer {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
   &__hashtag {
     text-transform: uppercase;
     font: bold 21px/26px "pt sans", sans-serif;
@@ -9,5 +14,13 @@
     text-transform: uppercase;
     font: 400 14px/26px "pt sans", sans-serif;
     color: $text-gray;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
   }
 }

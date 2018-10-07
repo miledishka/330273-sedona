@@ -5,10 +5,31 @@ body {
   font-size: 18px;
   line-height: 27px;
   font-family: "pt sans", "Arial", sans-serif;
-  font-style: "pt sans", sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  width: auto;
+  min-height: 100%;
+  font-style: normal;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+    padding: 0 120px;
+  }
 }

@@ -16,14 +16,62 @@
     color: $text-gray;
   }
 
-  &__likes {
-    display: flex;
-  }
-
   &__count {
     margin-left: 13px;
     margin-top: 1px;
     font: 700 14px/24px "pt sans", sans-serif;
     color: $text-black;
+  }
+
+  &__link img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .visible {
+    &__tablet {
+      display: none;
+    }
+
+    &__desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .visible {
+    &__mobile {
+      display: none;
+    }
+
+    &__desktop {
+      display: none;
+    }
+  }
+
+  .picture__little {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .visible {
+    &__mobile {
+      display: none;
+    }
+
+    &__tablet {
+      display: none;
+    }
+  }
+
+  .picture__little {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }

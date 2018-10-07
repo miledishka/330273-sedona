@@ -1,0 +1,50 @@
+.page-header {
+  &__banner {
+    position: relative;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: $bg-white;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    min-height: 250px;
+  }
+
+  &__banner--index {
+    min-height: 520px;
+
+    &::before {
+      background-image: url("../img/bg-intro-triangle-mobile.svg");
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    margin-top: 100px;
+    margin-left: 200px;
+    font: 700 80px/26px "pt sans", sans-serif;
+    color: $text-white;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header__banner {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header__banner {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}

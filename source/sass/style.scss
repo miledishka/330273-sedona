@@ -1,15 +1,12 @@
+@import "global/normalize.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/scaffolding.scss";
 @import "blocks/advantage.scss";
-@import "blocks/banner.scss";
-@import "blocks/footer.scss";
 @import "blocks/form-section.scss";
 @import "blocks/form-submit.scss";
-@import "blocks/gallery-content.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/media.scss";
-@import "blocks/page.scss";
 @import "blocks/picture.scss";
 @import "blocks/promo.scss";
 @import "blocks/review.scss";
@@ -18,3 +15,4 @@
 @import "blocks/service.scss";
 @import "blocks/social.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
