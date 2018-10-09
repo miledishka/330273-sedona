@@ -13,12 +13,12 @@
 
   &__title {
     text-transform: uppercase;
-    font: 700 18px/26px "pt sans", sans-serif;
+    font: 700 18px/26px $ptsans;
   }
 
   &__text {
     text-transform: uppercase;
-    font: 440 14px/21px "pt sans", sans-serif;
+    font: 440 14px/21px $ptsans;
     color: $text-gray;
 
     &--white {
@@ -40,7 +40,6 @@
 
     &__wrapper {
       display: flex;
-      justify-content: space-around;
     }
 
     &__second {

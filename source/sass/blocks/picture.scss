@@ -7,19 +7,19 @@
 
   &__title {
     text-transform: uppercase;
-    font: 700 14px/24px "pt sans", sans-serif;
+    font: 700 14px/24px $ptsans;
     color: $bg-black;
   }
 
   &__text {
-    font: 400 14px/24px "pt sans", sans-serif;
+    font: 400 14px/24px $ptsans;
     color: $text-gray;
   }
 
   &__count {
     margin-left: 13px;
     margin-top: 1px;
-    font: 700 14px/24px "pt sans", sans-serif;
+    font: 700 14px/24px $ptsans;
     color: $text-black;
   }
 
