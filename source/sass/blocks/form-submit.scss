@@ -1,9 +1,19 @@
 .form-submit__btn {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  justify-content: center;
   background-color: $bg-blue;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font: 700 21px/26px "pt sans", sans-serif;
+  font: 700 21px/26px $ptsans;
   color: $bg-white;
+}
+
+@media (min-width: 768px) {
+  .form-submit__btn {
+    justify-content: flex-start;
+  }
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  &__sity {
+  &__city {
     text-transform: uppercase;
     background-color: $bg-blue;
 
@@ -13,16 +13,41 @@
 
   &__title {
     text-transform: uppercase;
-    font: 700 18px/26px "pt sans", sans-serif;
+    font: 700 18px/26px $ptsans;
   }
 
   &__text {
     text-transform: uppercase;
-    font: 440 14px/21px "pt sans", sans-serif;
+    font: 440 14px/21px $ptsans;
     color: $text-gray;
 
     &--white {
       color: $text-white;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .advantage {
+    &__info {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        list-style-type: none;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__second {
+      order: 1;
+    }
+
+    &__first {
+      order: 0;
     }
   }
 }

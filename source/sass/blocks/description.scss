@@ -1,12 +1,14 @@
 .description {
-  &___title {
+  text-align: center;
+
+  &__title {
     margin: 0 auto;
     text-transform: uppercase;
-    font: 700 18px/26px "pt sans", sans-serif;
+    font: 700 18px/26px $ptsans;
     color: $text-black;
   }
 
-  &___text {
+  &__text {
     margin: 0 auto;
     text-transform: uppercase;
   }

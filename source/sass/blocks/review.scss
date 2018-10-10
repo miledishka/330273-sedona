@@ -1,12 +1,16 @@
 .review {
   &__title {
     text-transform: uppercase;
-    font: 700 18px/26px "pt sans", sans-serif;
+    font: 700 18px/26px $ptsans;
     color: $text-black;
   }
 
   &__text {
-    font: 400 14px/24px "pt sans", sans-serif;
+    font: 400 14px/24px $ptsans;
     color: $text-gray;
+  }
+
+  &__header {
+    text-align: center;
   }
 }
