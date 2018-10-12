@@ -1,13 +1,28 @@
 .advantage {
   display: flex;
   flex-direction: column;
+  font-size: 0;
+  position: relative;
+
+  &__image {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+  }
 
   &__city {
     text-transform: uppercase;
     background-color: $bg-blue;
+    min-height: 190px;
 
     &--white {
       color: $text-white;
+      vertical-align: top;
+      box-sizing: border-box;
+      position: relative;
+      text-align: center;
+      line-height: 21px;
+      padding: 55px 15px;
     }
   }
 
@@ -25,6 +40,18 @@
       color: $text-white;
     }
   }
+}
+
+.advantage__info {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  line-height: 21px;
+  padding: 50px 6%;
+  background: $bg-gray;
+  display: inline-block;
+  vertical-align: top;
 }
 
 @media (min-width: 768px) {

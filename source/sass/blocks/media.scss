@@ -4,12 +4,19 @@
   text-align: center;
 
   &__title {
-    font: 700 18px/26px $ptsans;
+    font: 700 30px/26px $ptsans;
     color: $text-black;
   }
 
   &__text {
     font: 400 14px/24px $ptsans;
     color: $text-gray;
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .media {
+    padding: 50px 15% 50px;
   }
 }

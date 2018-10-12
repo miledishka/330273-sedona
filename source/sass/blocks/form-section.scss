@@ -4,6 +4,7 @@
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
     color: $text-black;
+    text-align: center;
   }
 
   &__label {
@@ -21,6 +22,10 @@
   &__field {
     font: 700 18px/26px $ptsans;
     color: $text-black;
+    display: block;
+    padding-top: 20px;
+    position: relative;
+    min-height: 60px;
   }
 
   &__contact {
@@ -37,6 +42,7 @@
   &__landmarks {
     font: 700 18px/26px $ptsans;
     color: $text-black;
+    display: inline-block;
   }
 
   &__textarea {
@@ -44,6 +50,197 @@
     font: 700 18px/26px $ptsans;
     color: $text-black;
   }
+
+  &__item {
+    border-top: 1px solid $bg-gray;
+    padding: 20px 20px 22px;
+    position: relative;
+  }
+
+  &__submit {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.form-section__submit input[type="submit"] {
+  border: none;
+  outline: none;
+  font-size: 21px;
+  font-weight: 400;
+  color: $text-white;
+  background: $bg-blue;
+  min-width: 280px;
+  box-sizing: border-box;
+  padding: 16px 0;
+  text-align: center;
+}
+
+input.form-section__meet--long[type="text"] {
+  width: 180px;
+  margin-left: 20px;
+}
+
+input[type="text"] {
+  font: 700 18px/26px $ptsans;
+  border: 4px solid $bg-input;
+  outline: none;
+  background: $bg-input;
+  height: 50px;
+  color: $text-black;
+  padding-left: 20px;
+}
+
+.form-section__field--contact {
+  width: 100%;
+  position: relative;
+}
+
+.form-section__wrap {
+  position: relative;
+  margin-top: 10px;
+  width: 280px;
+}
+
+input.form-section__contact[type="text"] {
+  width: 250px;
+}
+
+.form-section__icon {
+  display: inline-block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: $bg-gray;
+  right: 0;
+  top: 0;
+}
+
+.form-section__icon--phone::after {
+  content: url("../img/icon-phone.svg");
+  width: 18px;
+}
+
+.form-section__icon::after {
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.form-section__icon--email::after {
+  content: url("../img/icon-mail.svg");
+  width: 18px;
+}
+
+.form-section__field--impression {
+  min-height: 48px;
+}
+
+.form-section__opinion {
+  display: inline-block;
+}
+
+.form-section__opinion input[type="radio"] {
+  display: none;
+}
+
+.form-section__opinion label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  border-radius: 50%;
+  background-color: $bg-input;
+  width: 56px;
+  height: 56px;
+}
+
+.form-section__opinion input[type="radio"]:checked ~ label:hover::before {
+  background-color: $bg-black;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 17px solid $bg-input;
+  cursor: pointer;
+}
+
+.form-section__opinion input[type="radio"]:checked ~ label::before {
+  background-color: $bg-black;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 17px solid $bg-input;
+  cursor: pointer;
+}
+
+.form-section__opinion label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  padding-left: 80px;
+  text-transform: none;
+}
+
+.form-section__landmarks input[type="checkbox"] {
+  display: none;
+}
+
+.form-section__landmarks label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  padding-left: 80px;
+  text-transform: none;
+  font: 700 18px/26px $ptsans;
+}
+
+.form-section__landmarks label::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  left: 0;
+  bottom: -12px;
+  background-color: $bg-input;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.form-section__landmarks input[type="checkbox"]:checked ~ label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  background-color: $bg-input;
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.form-section__landmarks input[type="checkbox"]:checked ~ label:hover::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.form-section__landmarks input[type="checkbox"]:checked ~ label:disabled::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.form-submit__line {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -51,6 +248,12 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+
+    &__title {
+      min-width: 258px;
+      font-size: 21px;
+      margin-bottom: 40px;
+    }
   }
 
   .form-section__item {
@@ -59,6 +262,7 @@
     width: 100%;
     border: none;
     padding: 0;
+    margin: 0 0 60px;
   }
 
   .form-section__item:first-child {
@@ -95,5 +299,91 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 27px;
+  }
+
+  .form-submit__line {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: $text-gray;
+    line-height: 26px;
+  }
+
+  .form-section__field--contact {
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+  }
+
+  .form-section__field {
+    min-height: 0;
+    padding-top: 0;
+  }
+
+  .form-section__wrap {
+    width: 100%;
+  }
+
+  input.form-section__contact[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+  }
+
+  .form-section__landmarks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .form-section__field--landmarks {
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 50%;
+    padding-left: 50px;
+  }
+
+  .form-section__comment {
+    width: 100%;
+    box-sizing: border-box;
+    background: $bg-input;
+    min-height: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-section__item {
+    margin-bottom: 60px;
+  }
+
+  .form-section__field--contact {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form-section__wrap {
+    width: 400px;
+  }
+
+  .form-section__field--landmarks {
+    width: 25%;
+    padding-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .form-section__textarea {
+    border: none;
+    outline: none;
+    width: 280px;
+    min-height: 120px;
+    padding: 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 25px;
   }
 }

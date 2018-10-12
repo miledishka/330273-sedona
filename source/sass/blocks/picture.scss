@@ -56,6 +56,13 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .picture__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f2f2f2;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -69,9 +76,22 @@
     }
   }
 
-  .picture__little {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  .picture {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    flex-basis: auto;
+
+    &__little {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    &--big {
+      width: 100%;
+    }
   }
 }

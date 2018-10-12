@@ -1,46 +1,31 @@
-.social {
-  &__btn {
-    display: inline-block;
-    opacity: 0.8;
-    width: 40px;
-    height: 40px;
-    font-size: 0;
-    vertical-align: top;
-    text-decoration: none;
-    margin-right: 5px;
-    background-color: $bg-blue;
-
-    &--twitter {
-      background-image: url("../img/icon-twitter.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      border: 3px solid $bg-blue;
-      background-clip: padding-box;
-    }
-
-    &--facebook {
-      background-image: url("../img/icon-facebook.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      border: 3px solid $bg-blue;
-      background-clip: padding-box;
-    }
-
-    &--youtube {
-      background-image: url("../img/icon-youtube.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      border: 3px solid $bg-blue;
-      background-clip: padding-box;
-    }
-  }
+.social-btn {
+  font-size: 0;
+  width: 46px;
+  height: 48px;
+  background: $bg-blue;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 6px 0 auto;
+  position: relative;
+  margin-bottom: 20px;
 
   &__btn:hover {
-    border-color: rgba(255, 255, 255, 0.5);
-    opacity: 1;
+    background-color: #5496bd;
   }
 
   &__btn:active {
-    opacity: 0.8;
+    background-color: #5496bd;
   }
+}
+
+.social-btn--icon {
+  fill: $bg-white;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.social-btn--icon:active {
+  opacity: 0.3;
 }
