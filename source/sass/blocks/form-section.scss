@@ -223,18 +223,21 @@ input.form-section__contact[type="text"] {
   width: 56px;
   height: 56px;
   background-image: url("../img/icon-tick.svg");
+  background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .form-section__landmarks input[type="checkbox"]:checked ~ label:hover::before {
   background-image: url("../img/icon-tick.svg");
+  background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .form-section__landmarks input[type="checkbox"]:checked ~ label:disabled::before {
   background-image: url("../img/icon-tick.svg");
+  background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
