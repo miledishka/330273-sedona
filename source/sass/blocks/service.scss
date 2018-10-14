@@ -1,20 +1,60 @@
 .service {
+  padding-inline-start: 0;
+
   &__title {
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
     color: $text-black;
+    background: $bg-white;
+    padding: 8px 0 28px 0;
+    margin-bottom: 0;
   }
 
   &__text {
     text-transform: uppercase;
     font: 440 14px/21px $ptsans;
     color: $text-gray;
+    margin: 0;
+  }
+
+  &__item {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 20px 2.5% 20px;
+  }
+
+  &__image {
+    svg {
+      fill: $bg-blue;
+      width: 40px;
+    }
+  }
+
+  &__description {
+    padding-left: 10px;
   }
 }
 
 @media (min-width: 768px) {
   .service {
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &__item {
+      flex-direction: column;
+      text-align: center;
+      width: 33.333333%;
+    }
+
+    &__image {
+      svg {
+        width: 76px;
+      }
+    }
+
+    &__item--first {
+      order: 1;
+    }
   }
 }

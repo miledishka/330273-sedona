@@ -8,9 +8,12 @@
   &__text {
     font: 400 14px/24px $ptsans;
     color: $text-gray;
+    padding: 15px 0;
   }
 
   &__header {
+    position: relative;
+    text-transform: uppercase;
     text-align: center;
   }
 }

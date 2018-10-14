@@ -4,12 +4,14 @@
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
     color: $text-black;
+    text-align: center;
   }
 
   &__label {
     text-transform: uppercase;
     font: 400 14px/26px $ptsans;
     color: $text-gray;
+    margin: auto 0;
   }
 
   &__meet {
@@ -21,6 +23,10 @@
   &__field {
     font: 700 18px/26px $ptsans;
     color: $text-black;
+    padding-top: 20px;
+    min-height: 60px;
+    display: inline-flex;
+    width: 100%;
   }
 
   &__contact {
@@ -37,13 +43,219 @@
   &__landmarks {
     font: 700 18px/26px $ptsans;
     color: $text-black;
+    display: inline-block;
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    label {
+      display: inline-block;
+      margin: auto 0;
+      cursor: pointer;
+      position: relative;
+      padding-left: 80px;
+      text-transform: none;
+      font: 700 18px/26px $ptsans;
+    }
+
+    label::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      vertical-align: middle;
+      left: 0;
+      bottom: -12px;
+      background-color: $bg-input;
+      width: 56px;
+      height: 56px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked ~ label::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -12px;
+      background-color: $bg-input;
+      width: 56px;
+      height: 56px;
+      background-image: url("../img/icon-tick.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked ~ label:hover::before {
+      background-image: url("../img/icon-tick.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked ~ label:disabled::before {
+      background-image: url("../img/icon-tick.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
   }
 
   &__textarea {
     background-color: $bg-input;
     font: 700 18px/26px $ptsans;
     color: $text-black;
+    width: 100%;
+    min-height: 160px;
+    border: 0;
   }
+
+  &__item {
+    border-top: 1px solid $bg-gray;
+    padding: 20px 20px 22px;
+  }
+
+  &__submit {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__comment {
+    width: 100%;
+    box-sizing: border-box;
+    background: $bg-input;
+    min-height: 120px;
+    padding: 20px;
+  }
+}
+
+.form-section__submit input[type="submit"] {
+  border: none;
+  outline: none;
+  font-size: 21px;
+  font-weight: 400;
+  color: $text-white;
+  background: $bg-blue;
+  min-width: 280px;
+  box-sizing: border-box;
+  padding: 16px 0;
+  text-align: center;
+}
+
+input.form-section__meet--long[type="text"] {
+  width: 100%;
+  margin-left: 20px;
+}
+
+input[type="text"] {
+  font: 700 18px/26px $ptsans;
+  border: 4px solid $bg-input;
+  outline: none;
+  background: $bg-input;
+  height: 50px;
+  color: $text-black;
+}
+
+.form-section__field--contact {
+  width: 100%;
+
+  .form-section__field {
+    display: block;
+  }
+}
+
+.form-section__wrap {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+}
+
+input.form-section__contact[type="text"] {
+  width: 100%;
+}
+
+.form-section__icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: $bg-gray;
+  right: 0;
+  top: 0;
+}
+
+.form-section__icon--phone::after {
+  content: url("../img/icon-phone.svg");
+  width: 18px;
+}
+
+.form-section__icon::after {
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.form-section__icon--email::after {
+  content: url("../img/icon-mail.svg");
+  width: 18px;
+}
+
+.form-section__field--impression {
+  min-height: 48px;
+}
+
+.form-section__opinion {
+  display: inline-block;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    border-radius: 50%;
+    background-color: $bg-input;
+    width: 56px;
+    height: 56px;
+  }
+
+  input[type="radio"]:checked ~ label:hover::before {
+    background-color: $bg-black;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 17px solid $bg-input;
+    cursor: pointer;
+  }
+
+  input[type="radio"]:checked ~ label::before {
+    background-color: $bg-black;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 17px solid $bg-input;
+    cursor: pointer;
+  }
+
+  label {
+    display: inline-block;
+    margin: auto 0;
+    cursor: pointer;
+    position: relative;
+    padding-left: 80px;
+    text-transform: none;
+  }
+}
+
+.form-submit__line {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -51,6 +263,12 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+
+    &__title {
+      min-width: 258px;
+      font-size: 21px;
+      margin-bottom: 40px;
+    }
   }
 
   .form-section__item {
@@ -59,6 +277,7 @@
     width: 100%;
     border: none;
     padding: 0;
+    margin: 0 0 60px;
   }
 
   .form-section__item:first-child {
@@ -95,5 +314,83 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 27px;
+  }
+
+  .form-submit__line {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: $text-gray;
+    line-height: 26px;
+  }
+
+  .form-section__field--contact {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .form-section__field {
+    min-height: 0;
+    padding-top: 0;
+  }
+
+  .form-section__wrap {
+    width: 100%;
+  }
+
+  input.form-section__contact[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+  }
+
+  .form-section__landmarks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .form-section__field--landmarks {
+    box-sizing: border-box;
+    margin-top: 50px;
+    width: 50%;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-section {
+    &--wide {
+      display: inline-flex;
+      width: 100%;
+    }
+
+    &__field--contact {
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+
+      .form-section__field {
+        width: 40%;
+        display: inline-flex;
+        white-space: nowrap;
+
+        input {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    &__item {
+      margin-bottom: 60px;
+    }
+
+
+    &__field--landmarks {
+      width: 25%;
+      padding-left: 0;
+      margin-bottom: 50px;
+    }
   }
 }

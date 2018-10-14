@@ -1,26 +1,50 @@
 .promo {
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  line-height: 21px;
+  padding: 58px 15% 38px;
+  display: inline-block;
+  vertical-align: top;
 
   &__title {
     text-transform: uppercase;
-    font: 700 18px/26px "pt sans", sans-serif;
+    font: 700 30px/26px "pt sans", sans-serif;
     color: $text-black;
+    padding: 0 7%;
+    margin: 0;
   }
 
   &__text {
     text-transform: uppercase;
     font: 440 14px/21px "pt sans", sans-serif;
     color: $text-gray;
+    padding: 15px 0;
   }
 
   &__btn {
     background-color: $bg-blue;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    font: 700 21px/26px "pt sans", sans-serif;
-    color: $bg-white;
+    text-align: center;
+    font: 400 21px/26px "pt sans", sans-serif;
+    border: none;
+    outline: none;
+    color: $text-white;
+    text-transform: uppercase;
+    padding: 16px 0;
+    min-width: 458px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  &__btn:hover {
+    background-color: #5496bd;
+  }
+
+  &__btn:active {
+    background-color: #5496bd;
+    color: #c0c0c0;
   }
 }
