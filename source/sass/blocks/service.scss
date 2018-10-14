@@ -1,86 +1,60 @@
 .service {
+  padding-inline-start: 0;
+
   &__title {
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
     color: $text-black;
     background: $bg-white;
-    min-height: 0;
-    padding: 8px 0 8px 50px;
-    position: relative;
+    padding: 8px 0 28px 0;
+    margin-bottom: 0;
   }
 
   &__text {
     text-transform: uppercase;
     font: 440 14px/21px $ptsans;
     color: $text-gray;
+    margin: 0;
   }
-}
 
-.service__item {
-  position: relative;
-}
+  &__item {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 20px 2.5% 20px;
+  }
 
-.service__item--house {
-  text-align: center;
-  list-style-type: none;
-  padding: 160px 5.5% 50px;
-}
+  &__image {
+    svg {
+      fill: $bg-blue;
+      width: 40px;
+    }
+  }
 
-.service__item--souvenir {
-  text-align: center;
-  list-style-type: none;
-  padding: 160px 5.5% 50px;
-}
-
-.service__item--food {
-  list-style-type: none;
-  text-align: center;
-  padding: 160px 5.5% 50px;
-}
-
-.service__title--house {
-  width: 45px;
-  fill: $bg-blue;
-  position: absolute;
-  left: 50%;
-  top: 60px;
-}
-
-.service__title--souvenir {
-  width: 45px;
-  fill: $bg-blue;
-  left: 50%;
-  top: 60px;
-  position: absolute;
-}
-
-.service__title--food {
-  left: 50%;
-  top: 60px;
-  width: 45px;
-  fill: $bg-blue;
-  position: absolute;
+  &__description {
+    padding-left: 10px;
+  }
 }
 
 @media (min-width: 768px) {
   .service {
-    display: flex;
-    padding: 0;
-  }
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
 
-  .service__title--house {
-    width: 70px;
-  }
+    &__item {
+      flex-direction: column;
+      text-align: center;
+      width: 33.333333%;
+    }
 
-  .service__title--souvenir {
-    width: 70px;
-  }
+    &__image {
+      svg {
+        width: 76px;
+      }
+    }
 
-  .service__title--food {
-    width: 70px;
-  }
-
-  .service__item--souvenir {
-    order: 1;
+    &__item--first {
+      order: 1;
+    }
   }
 }

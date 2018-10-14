@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="container">
+<body>
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -33,10 +34,10 @@
       <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg"  width="100" height="80" alt="Логотип">
     </a>
     <div class="page-header__index">
-      <img src="img/text-sedona.svg" alt="Sedona" class="page-header__image">
+      <img src="img/text-sedona-index.svg" alt="Welcome to the Sedona" class="page-header__image">
     </div>
   </header>
-  <main class="page-main">
+  <main class="container">
     <section class="review">
       <div class="review__header">
         <h1 class="review__title font-title">Оставьте свой отзыв!</h1>
@@ -48,37 +49,39 @@
             <div class="form-section__title font-title">Представьтесь:</div>
             <div class="form-section__field">
               <label for="name" class="form-section__label">Имя</label>
-              <input class="form-section__meet form-section__meet--long form-section__meet--longer" type="text" placeholder="Петр" id="name" required>
+              <input class="form-section__meet form-section__meet--long form-section__meet--longer" type="text" placeholder="  Петр" id="name" required>
             </div>
             <div class="form-section__field">
               <label for="surname" class="form-section__label">Фамилия</label>
-              <input class="form-section__meet form-section__meet--long" type="text" placeholder="Иванов" id="surname" required>
+              <input class="form-section__meet form-section__meet--long" type="text" placeholder="  Иванов" id="surname" required>
             </div>
             <div class="form-section__field">
               <label for="middle-name" class="form-section__label">Отчество</label>
-              <input class="form-section__meet form-section__meet--long" type="text" placeholder="Александрович" id="middle-name" required>
+              <input class="form-section__meet form-section__meet--long" type="text" placeholder="  Александрович" id="middle-name" required>
             </div>
           </div>
           <div class="form-section__item">
             <div class="form-section__legend">
               <div class="form-section__title font-title">Контактная информация:</div>
             </div>
-            <div class="form-section__field form-section__field--contact">
-              <label for="phone" class="form-section__label">
-                <span class="form-section__required">Контактный телефон</span>:
-              </label>
-              <div class="form-section__wrap">
-                <input class="form-section__contact" type="text" placeholder="Введите телефон" id="phone" required>
-                <div class="form-section__icon form-section__icon--phone"></div>
+            <div class="form-section__field--contact">
+              <div class="form-section__field">
+                <label for="phone" class="form-section__label">
+                  <span class="form-section__required">Контактный телефон</span>:
+                </label>
+                <div class="form-section__wrap">
+                  <input class="form-section__contact" type="text" placeholder="  Введите телефон" id="phone" required>
+                  <div class="form-section__icon form-section__icon--phone"></div>
+                </div>
               </div>
-            </div>
-            <div class="form-section__field form-section__field--contact">
-              <label for="email" class="form-section__label">
-                <span class="form-section__required">Электронная почта</span>:
-              </label>
-              <div class="form-section__wrap">
-                <input class="form-section__contact" type="text" placeholder="Введите e-mail" id="email" required>
-                <div class="form-section__icon form-section__icon--email"></div>
+              <div class="form-section__field">
+                <label for="email" class="form-section__label">
+                  <span class="form-section__required">Электронная почта</span>:
+                </label>
+                <div class="form-section__wrap">
+                  <input class="form-section__contact" type="text" placeholder="  Введите e-mail" id="email" required>
+                  <div class="form-section__icon form-section__icon--email"></div>
+                </div>
               </div>
             </div>
           </div>

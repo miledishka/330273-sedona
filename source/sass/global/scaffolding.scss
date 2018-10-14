@@ -19,8 +19,7 @@ img {
 
 .container {
   width: auto;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0 5%;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -34,18 +33,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: auto;
-    padding: 0 64px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: auto;
-    padding: 0 120px;
-  }
 }

@@ -64,7 +64,7 @@
   }
 
   &__btn-begin {
-    padding-right: 360px;
+    padding-right: 280px;
     padding-left: 20px;
   }
 
@@ -152,6 +152,10 @@
     &__video-clip {
       background-image: url("../img/video-desktop@1x.jpg");
       background-repeat: no-repeat;
+    }
+
+    &__header-begin--icon {
+      margin-left: -830px;
     }
   }
 }

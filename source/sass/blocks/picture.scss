@@ -1,5 +1,6 @@
 .picture {
-  padding: 20px 20px 20px 20px;
+  width: 100%;
+  position: relative;
 
   &__image {
     display: block;
@@ -28,70 +29,55 @@
   }
 }
 
-@media (max-width: 768px) {
-  .visible {
-    &__tablet {
-      display: none;
+@media (min-width: 769px) {
+  .picture {
+    &--little {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
     }
 
-    &__desktop {
-      display: none;
+    &__footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: #f2f2f2;
     }
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1199px) {
-  .visible {
-    &__mobile {
-      display: none;
-    }
-
-    &__desktop {
-      display: none;
-    }
-  }
-
-  .picture__little {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .picture__footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #f2f2f2;
   }
 }
 
 @media (min-width: 1200px) {
-  .visible {
-    &__mobile {
-      display: none;
-    }
-
-    &__tablet {
-      display: none;
-    }
-  }
-
   .picture {
-    margin: 0;
-    padding: 0;
-    flex-grow: 1;
-    flex-basis: auto;
-
-    &__little {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      width: 100%;
+    &--little {
+      width: 33.333333%;
     }
 
     &--big {
       width: 100%;
+    }
+
+    &__title,
+    &__text,
+    &__count {
+      color: $text-white;
+    }
+
+    &__likes .photo__like {
+      fill: $bg-white;
+    }
+
+    &__footer {
+      background: rgba(0, 0, 0, 0.3);
+      display: flex;
+    }
+
+    &__block {
+      margin-right: auto;
+      padding-left: 20px;
+    }
+
+    &__likes {
+      padding-right: 20px;
     }
   }
 }
