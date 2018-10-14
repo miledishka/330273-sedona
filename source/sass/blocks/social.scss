@@ -10,7 +10,11 @@
   margin-bottom: 20px;
 
   &__btn:hover {
-    background-color: #5496bd;
+    fill: #81b3d2;
+    position: absolute;
+    left: 0;
+    width: 27px;
+    height: 34px;
   }
 
   &__btn:active {

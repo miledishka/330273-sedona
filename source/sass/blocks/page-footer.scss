@@ -18,7 +18,18 @@
     text-transform: uppercase;
     font: 400 14px/26px $ptsans;
   }
-}
+
+  &__text {
+    margin: 0 auto;
+    font: 400 14px/26px $ptsans;
+  }
+
+  &__link {
+    font-size: 0;
+    height: 53px;
+    fill: $bg-black;
+  }
+
 
 @media (min-width: 768px) {
   .page-footer {
