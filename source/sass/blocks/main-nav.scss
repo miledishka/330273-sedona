@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
   width: auto;
   margin: 0 auto;
 
@@ -159,12 +160,12 @@
   display: block;
   padding: 12px 21px;
   padding-bottom: 13px;
-
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   color: $text-white;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .site-list a[href] {
@@ -191,55 +192,30 @@
   }
 
   .site-list__item a {
+    font-size: 14px;
+    line-height: 26px;
     padding: 0;
-    padding-top: 25px;
-    padding-bottom: 23px;
-
+    padding-top: 15px;
+    padding-bottom: 38px;
     background: none;
     border: none;
   }
 
-  .site-list__item a[href] {
-    &:hover {
-      color: $bg-blue-nav;
-    }
-
-    &:active {
-      color: $bg-blue-nav;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .site-list__item a {
-    padding-right: 31px;
-    padding-left: 31px;
-  }
-
-  .site-list__item a[href] {
-    &:hover {
-      color: #000000;
-
-      background-color: $bg-white;
-    }
-
-    &:active {
-      color: rgba(0, 0, 0, 0.3);
-
-      background-color: $bg-white;
-      opacity: 1;
-    }
+  .site-list__item:nth-child(2) {
+    margin-right: 20%;
   }
 }
 
 @media (min-width: 768px) {
   .main-nav__list {
-    padding-left: 0;
     display: flex;
     flex-direction: row;
     background-color: $bg-white;
     justify-content: space-around;
-    margin-bottom: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
 
     .site-list__item {
       border-bottom: 0;
@@ -251,17 +227,57 @@
       text-decoration: none;
     }
   }
+
+  .site-list__item a[href] {
+    &:hover {
+      color: $text-blue;
+      background-color: $bg-white;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: $bg-white;
+      opacity: 1;
+    }
+
+    &:disabled {
+      color: $text-gray;
+      background-color: $bg-white;
+      opacity: 0.8;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
   .main-nav__list {
     display: flex;
     flex-direction: row;
+    padding-bottom: 30px;
   }
 
   .page-header__logo {
     margin-top: -30px;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-list__item a {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  .site-list__item a[href] {
+    &:hover {
+      color: $text-blue;
+      background-color: $bg-white;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: $bg-white;
+      opacity: 1;
+    }
   }
 }

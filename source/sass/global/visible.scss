@@ -44,4 +44,15 @@
       display: block;
     }
   }
+
+  body {
+    background-color: $bg-input;
+  }
+
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: $bg-white;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
 }

@@ -1,12 +1,17 @@
 .service {
   padding-inline-start: 0;
+  padding-top: 5px;
+  margin-bottom: 26px;
+  padding-left: 4px;
+  padding-right: 10px;
 
   &__title {
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
     color: $text-black;
     background: $bg-white;
-    padding: 8px 0 28px 0;
+    padding-top: 9px;
+    padding-bottom: 12px;
     margin-bottom: 0;
   }
 
@@ -15,12 +20,13 @@
     font: 440 14px/21px $ptsans;
     color: $text-gray;
     margin: 0;
+    margin-bottom: -4px;
   }
 
   &__item {
     display: inline-flex;
     list-style-type: none;
-    padding: 20px 2.5% 20px;
+    padding: 7px 5.5% 0;
   }
 
   &__image {
@@ -40,11 +46,27 @@
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 60px;
+    margin-top: 47px;
 
     &__item {
       flex-direction: column;
       text-align: center;
       width: 33.333333%;
+      padding-left: 35px;
+      font-size: 21px;
+    }
+
+    &__title {
+      padding: 0;
+      margin: 0;
+      padding-top: 24px;
+      font-size: 21px;
+      padding-bottom: 19px;
+    }
+
+    &__description {
+      padding: 0;
     }
 
     &__image {
