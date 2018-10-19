@@ -15,6 +15,13 @@
     position: relative;
     text-transform: uppercase;
     text-align: center;
+    padding: 21px 0 6px;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  &__header {
     padding: 58px 15% 38px;
   }
 }

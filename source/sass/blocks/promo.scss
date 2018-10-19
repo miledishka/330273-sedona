@@ -78,6 +78,16 @@
       min-width: 460px;
       margin-top: 42px;
     }
+  }
+}
 
+@media (min-width: 1200px) {
+  .promo__btn {
+    margin-top: 45px;
+  }
+
+  .promo__text {
+    width: 700px;
+    padding-top: 20px;
   }
 }

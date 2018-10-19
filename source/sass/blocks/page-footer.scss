@@ -17,6 +17,7 @@
   &__copyright {
     text-transform: uppercase;
     font: 400 14px/26px $ptsans;
+    margin-top: 22px;
   }
 
   &__text {
@@ -44,10 +45,6 @@
     vertical-align: middle;
   }
 
-  &__copyright {
-    margin-top: 22px;
-  }
-
   .copyright__text {
     margin-right: 10px;
     display: inline-flex;
@@ -71,7 +68,14 @@
       margin-top: 0;
     }
   }
+
   .social-btn {
     margin-right: 2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer {
+    margin: 0 60px;
   }
 }

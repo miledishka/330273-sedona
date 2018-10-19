@@ -15,22 +15,6 @@
     min-height: 256px;
   }
 
-  &__info {
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
-    text-align: center;
-    line-height: 21px;
-    background: $bg-gray;
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 18px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-    margin-bottom: 35px;
-  }
-
   &::before {
     content: "";
     width: 100%;
@@ -54,6 +38,10 @@
     width: 100%;
   }
 
+  &__shift {
+    display: none;
+  }
+
   &__first {
     background-position: bottom;
     background-repeat: no-repeat;
@@ -67,7 +55,7 @@
     background-color: $bg-blue;
     min-height: 190px;
     padding-top: 40px;
-    padding-bottom: 24px;
+    padding-bottom: 28px;
 
     &--white {
       color: $text-white;
@@ -77,12 +65,75 @@
       text-align: center;
       line-height: 21px;
     }
+
+    &__wrapper {
+      padding: 0 20px;
+    }
+
+    &--second {
+      padding-top: 25px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__place {
+    text-transform: uppercase;
+    font: 440 14px/19px $ptsans;
+    color: $text-gray;
+    margin: 0 auto;
+    width: 250px;
   }
 
   &__title {
     text-transform: uppercase;
-    font: 700 18px/26px $ptsans;
-    margin-bottom: -4px;
+    font: 700 18px/21px $ptsans;
+  }
+
+  &__text,
+  &__number {
+    text-transform: uppercase;
+    font: 440 14px/21px $ptsans;
+    color: $text-gray;
+
+    &--white {
+      color: $text-white;
+    }
+  }
+}
+
+.gray-panel {
+  &__info {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    line-height: 21px;
+    background: $bg-gray;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+  }
+
+  &__shift {
+    display: none;
+  }
+
+  &__place {
+    text-transform: uppercase;
+    font: 440 14px/19px $ptsans;
+    color: $text-gray;
+    margin: 15px auto;
+    width: 250px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font: 700 18px/21px $ptsans;
   }
 
   &__text,
@@ -96,7 +147,8 @@
     }
   }
 
-  .advantage__info li:nth-child(1), .advantage__info li:nth-child(2) {
+  &__info li:nth-child(1),
+  &__info li:nth-child(2) {
     border-bottom: 2px solid #e5e5e5;
     padding-bottom: 20px;
   }
@@ -116,26 +168,16 @@
 
 @media (min-width: 768px) {
   .advantage {
-    &__info {
-      display: flex;
-      justify-content: space-around;
-      padding: 0;
-      margin: 0;
-      padding-top: 20px;
-      padding-right: 10px;
-      margin-bottom: -5px;
-
-      li {
-        list-style-type: none;
-      }
-    }
-
     &__wrapper {
       display: flex;
     }
 
     &__second {
       order: 1;
+    }
+
+    &__shift {
+      display: inline-block;
     }
 
     &__first {
@@ -152,7 +194,9 @@
     }
 
     &__title {
+      margin-top: 15px;
       font-size: 21px;
+      line-height: 26px;
     }
 
     &__city {
@@ -174,14 +218,47 @@
       margin-top: 17px;
       margin-bottom: 10px;
     }
+
+    &__background-white {
+      padding: 10px 8%;
+    }
   }
 
-  .advantage__info li:nth-child(1), .advantage__info li:nth-child(2) {
-    border-bottom-style: none;
-  }
+  .gray-panel {
+    &__info {
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 20px 0 10px 0;
+      padding-right: 10px;
+      margin-bottom: 5px;
 
-  .advantage__background-white {
-    padding: 10px 8%;
+      li {
+        list-style-type: none;
+      }
+    }
+
+    &__info li:nth-child(1),
+    &__info li:nth-child(2) {
+      border-bottom-style: none;
+    }
+
+    &__description {
+      padding: 0 50px;
+    }
+
+    &__title {
+      margin-top: 25px;
+      padding: 0 20px;
+      font-size: 21px;
+      line-height: 24px;
+    }
+
+    &__place {
+      width: auto;
+      line-height: 21px;
+      margin-top: 16px;
+    }
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -206,6 +283,30 @@
     &__first {
       background-image: url("../img/main-bridge-desktop@1x.jpg");
     }
+
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__shift {
+      display: inline-block;
+    }
+
+    &__city__wrapper {
+      width: 210px;
+    }
+
+    &__city {
+      width: 33.333333%;
+    }
+
+    &__image {
+      width: 66.6666667%;
+    }
+  }
+
+  .gray-panel__description {
+    padding: 0 110px;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

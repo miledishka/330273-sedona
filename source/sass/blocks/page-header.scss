@@ -20,6 +20,15 @@
     z-index: 0;
   }
 
+  &__small {
+    display: block;
+    margin: 0 auto;
+    width: 229px;
+    height: 39px;
+    padding-top: 52px;
+    padding-bottom: 69px;
+  }
+
   &__logo-image {
     z-index: 1;
   }

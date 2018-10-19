@@ -1,6 +1,5 @@
 .form-section {
   &__title {
-    padding-bottom: 10px;
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
     color: $text-black;
@@ -43,7 +42,7 @@
   &__field {
     font: 700 18px/26px $ptsans;
     color: $text-black;
-    padding-top: 20px;
+    padding-top: 18px;
     min-height: 60px;
     display: inline-flex;
     width: 100%;
@@ -161,7 +160,8 @@
 
   &__item {
     border-top: 1px solid $bg-gray;
-    padding: 20px 20px 22px;
+    padding: 0 20px 22px;
+    position: relative;
   }
 
   &__submit {
@@ -303,7 +303,7 @@
 input.form-section__meet--long[type="text"] {
   width: 100%;
   margin-left: 20px;
-  padding-left: 20px;
+  padding-left: 5px;
 }
 
 input[type="text"] {

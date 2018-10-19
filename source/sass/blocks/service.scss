@@ -1,7 +1,7 @@
 .service {
   padding-inline-start: 0;
   padding-top: 5px;
-  margin-bottom: 26px;
+  margin-bottom: 40px;
   padding-left: 4px;
   padding-right: 10px;
 
@@ -10,7 +10,7 @@
     font: 700 18px/26px $ptsans;
     color: $text-black;
     background: $bg-white;
-    padding-top: 9px;
+    padding-top: 5px;
     padding-bottom: 12px;
     margin-bottom: 0;
   }
@@ -20,7 +20,6 @@
     font: 440 14px/21px $ptsans;
     color: $text-gray;
     margin: 0;
-    margin-bottom: -4px;
   }
 
   &__item {
@@ -32,7 +31,7 @@
   &__image {
     svg {
       fill: $bg-blue;
-      width: 40px;
+      width: 37px;
     }
   }
 
@@ -78,5 +77,14 @@
     &__item--first {
       order: 1;
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .service {
+    margin-bottom: 80px;
+    margin-top: 44px;
+    padding-left: 1%;
+    padding-right: 1%;
   }
 }

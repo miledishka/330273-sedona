@@ -1,6 +1,8 @@
 .picture {
   width: 100%;
   position: relative;
+  border-top: 1px solid #e5e5e5;
+  padding: 23px 20px 13px;
 
   &__image {
     display: block;
@@ -10,11 +12,19 @@
     text-transform: uppercase;
     font: 700 14px/24px $ptsans;
     color: $bg-black;
+    padding: 0;
+    margin: 0;
   }
 
   &__text {
     font: 400 14px/24px $ptsans;
     color: $text-gray;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__footer {
+    margin-top: 7px;
   }
 
   &__count {
@@ -34,12 +44,15 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .picture {
     &--little {
+      position: relative;
       display: flex;
       flex-direction: column;
       width: 50%;
+      padding: 0;
+      margin: 0;
     }
 
     &__footer {
