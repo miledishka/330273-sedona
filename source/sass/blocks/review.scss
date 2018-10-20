@@ -1,4 +1,6 @@
 .review {
+  margin-bottom: 120px;
+
   &__title {
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
@@ -15,7 +17,7 @@
     position: relative;
     text-transform: uppercase;
     text-align: center;
-    padding: 21px 0 6px;
+    padding: 23px 0 5px;
   }
 }
 
