@@ -1,6 +1,7 @@
 .video-content {
   position: relative;
   text-align: center;
+  margin-bottom: 100px;
 
   &__footer {
     text-transform: uppercase;
@@ -11,7 +12,7 @@
     color: $text-black;
     border-top: 1px solid #e5e5e5;
     text-align: center;
-    padding: 25px 0;
+    padding: 10px 0;
   }
 
   &__text {
@@ -22,60 +23,64 @@
   }
 
   &__video-clip {
+    margin-top: 15px;
     width: 320px;
-    height: 201px;
     position: relative;
-    margin: 0 auto 110px;
   }
 
   &__play {
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
-    left: 10%;
-    width: 80%;
-    height: 80px;
-    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 87%;
+    height: 45px;
+    bottom: 5px;
   }
 
   &__svg {
     background: #f2f2f2;
-    width: 80%;
-    height: 80px;
+    width: 100%;
+    height: 65px;
     display: flex;
-    left: 10%;
-    justify-content: space-between;
     box-sizing: border-box;
     align-items: center;
     position: absolute;
-    top: 615px;
+    top: 45px;
   }
 
   &__scale {
     background: rgba(255, 255, 255, 0.2);
-    width: 280px;
+    width: 100%;
     height: 4px;
-    top: 33px;
+    top: 20px;
     position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
   }
 
   &__bar {
     width: 10px;
     height: 10px;
+    top: 17px;
+    left: 55px;
     background: $bg-white;
     border-radius: 50%;
     position: absolute;
     bottom: 40px;
-    left: 127px;
   }
 
-  &__btn-begin {
-    padding-right: 280px;
-    padding-left: 20px;
+  &__btn {
+    margin-top: 5px;
   }
 
-  &__btn-end {
+  &__btn-repeat {
+    margin: 5px auto 0 25px;
+  }
+
+  &__btn-subtitles {
+    margin-right: 30px;
+  }
+
+  &__btn-fullscreen {
     padding-right: 20px;
   }
 
