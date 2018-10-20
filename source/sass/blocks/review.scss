@@ -21,6 +21,27 @@
   }
 }
 
+@media (min-width: 768px) {
+  .review {
+    padding: 0 8%;
+    margin-bottom: 60px;
+
+    &__header {
+      padding: 58px 15% 20px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      padding-left: 7%;
+      padding-right: 7%;
+      padding-top: 10px;
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   &__header {
     padding: 58px 15% 38px;
