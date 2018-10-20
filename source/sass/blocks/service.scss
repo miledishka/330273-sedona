@@ -83,8 +83,16 @@
 @media (min-width: 1200px) {
   .service {
     margin-bottom: 80px;
-    margin-top: 44px;
-    padding-left: 1%;
-    padding-right: 1%;
+    margin-top: 45px;
+
+    &__item {
+      padding: 10px 10px 0 0;
+      margin: 0 auto;
+    }
+
+    &__image svg {
+      width: 76px;
+      height: 72px;
+    }
   }
 }

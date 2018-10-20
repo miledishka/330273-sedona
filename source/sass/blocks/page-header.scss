@@ -76,12 +76,17 @@
       padding-bottom: 90px;
     }
 
+    &__small {
+      height: 170px;
+      width: 450px;
+    }
+
     &__index {
       position: relative;
       width: 100%;
       background-image: url("../img/bg-back-tablet@1x.jpg");
       background-color: #81b3d2;
-      background-position: top, center;
+      background-position: bottom;
       background-repeat: no-repeat;
       background-size: cover;
 
@@ -116,10 +121,13 @@
 
 @media (min-width: 1200px) {
   .page-header {
+    &__small {
+      height: 180px;
+    }
+
     &__image {
       height: 350px;
       padding-top: 80px;
-      padding-bottom: 80px;
     }
 
     &__index {

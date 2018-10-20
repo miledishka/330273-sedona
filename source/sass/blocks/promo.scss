@@ -12,7 +12,7 @@
   font-weight: 400;
   text-transform: uppercase;
   min-width: 320px;
-  margin-bottom: 90px;
+  margin-bottom: 110px;
 
   &__title {
     text-transform: uppercase;
@@ -64,6 +64,7 @@
 
 @media (min-width: 768px) {
   .promo {
+    margin-bottom: 90px;
     padding: 53px 15% 38px;
 
     &__title {
@@ -82,12 +83,16 @@
 }
 
 @media (min-width: 1200px) {
-  .promo__btn {
-    margin-top: 45px;
-  }
+  .promo {
+    padding: 60px 15% 38px;
 
-  .promo__text {
-    width: 700px;
-    padding-top: 20px;
+    &__btn {
+      margin-top: 45px;
+    }
+
+    &__text {
+      width: 700px;
+      padding-top: 15px;
+    }
   }
 }

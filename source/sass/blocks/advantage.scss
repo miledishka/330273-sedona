@@ -39,7 +39,7 @@
   }
 
   &__shift {
-    display: none;
+    display: inline-block;
   }
 
   &__first {
@@ -114,7 +114,7 @@
     padding-top: 18px;
     padding-left: 5px;
     padding-right: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin-bottom: 35px;
   }
 
@@ -124,7 +124,7 @@
 
   &__place {
     text-transform: uppercase;
-    font: 440 14px/19px $ptsans;
+    font: 440 14px/18px $ptsans;
     color: $text-gray;
     margin: 15px auto;
     width: 250px;
@@ -150,7 +150,7 @@
   &__info li:nth-child(1),
   &__info li:nth-child(2) {
     border-bottom: 2px solid #e5e5e5;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 }
 
@@ -231,7 +231,6 @@
       margin: 0;
       padding: 20px 0 10px 0;
       padding-right: 10px;
-      margin-bottom: 5px;
 
       li {
         list-style-type: none;
@@ -276,6 +275,19 @@
 
 @media (min-width: 1200px) {
   .advantage {
+    &__title {
+      margin-top: 25px;
+    }
+
+    &__number {
+      margin-top: 10px;
+      line-height: 5px;
+    }
+
+    &__text {
+      margin-top: 30px;
+    }
+
     &__house {
       background-image: url("../img/main-city-desktop@1x.jpg");
     }
@@ -305,8 +317,20 @@
     }
   }
 
-  .gray-panel__description {
-    padding: 0 110px;
+  .gray-panel {
+    &__title {
+      line-height: 26px;
+      padding: 0 30px;
+      margin-top: 28px;
+    }
+
+    &__info {
+      padding: 20px 0 0 0;
+    }
+
+    &__description {
+      padding: 0 110px;
+    }
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

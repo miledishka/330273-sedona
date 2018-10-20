@@ -2,7 +2,7 @@
   position: relative;
   text-transform: uppercase;
   text-align: center;
-  padding: 20px 0 20px;
+  padding: 25px 0 0;
 
   &__title {
     font: 700 18px/26px $ptsans;
@@ -13,14 +13,29 @@
   &__text {
     font: 400 14px/24px $ptsans;
     color: $text-gray;
-    padding-left: 8%;
-    padding-right: 7%;
+    margin: 0 auto;
     padding-top: 15px;
+    width: 270px;
   }
 }
 
 @media (min-width: 768px) {
   .media {
-    padding: 50px 15% 50px;
+    padding: 55px 15% 60px;
+
+    &__text {
+      width: 440px;
+      padding-top: 10px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .media {
+    padding: 95px 15% 60px;
   }
 }

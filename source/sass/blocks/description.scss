@@ -1,6 +1,6 @@
 .description {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 45px;
   margin-bottom: 30px;
 
   &__title {
@@ -38,11 +38,11 @@
 
 @media (min-width: 1200px) {
   .description {
-    padding: 5px 20% 20px;
+    padding: 5px 20% 18px;
   }
 
   .description__title {
-    padding-top: 55px;
+    padding-top: 45px;
     font: 700 21px/26px "pt sans", "Arial", sans-serif;
   }
 }

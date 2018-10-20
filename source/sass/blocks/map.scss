@@ -5,7 +5,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto, cover;
-  margin-bottom: 20px;
 }
 
 .map__embed {
@@ -43,7 +42,7 @@
   }
 
   .map {
-    margin-top: 10px;
+    margin-top: 15px;
     background-image: url("../img/icon-map-marker.svg"), url("../img/bg-map-desktop@1x.jpg");
   }
 }
