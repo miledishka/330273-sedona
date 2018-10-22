@@ -31,6 +31,7 @@
   }
 
   &__house {
+    background-image: url("../img/main-city-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-color: #81b3d2;
@@ -43,6 +44,7 @@
   }
 
   &__first {
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-color: #81b3d2;
@@ -55,7 +57,7 @@
     background-color: $bg-blue;
     min-height: 190px;
     padding-top: 40px;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
 
     &--white {
       color: $text-white;

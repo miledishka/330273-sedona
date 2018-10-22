@@ -48,21 +48,21 @@
           <h1 class="review__title font-title">Оставьте свой отзыв!</h1>
           <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
-        <form action="https://echo.htmlacademy.ru" method="GET">
+        <form id="review__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-section">
             <div class="form-section__item form-section__intro">
               <div class="form-section__title font-title">Представьтесь:</div>
               <div class="form-section__field">
                 <label for="name" class="form-section__label">Имя<sup>*</sup></label>
-                <input class="form-section__meet form-section__meet--long form-section__meet--longer" type="text" placeholder="  Петр" id="name" required>
+                <input class="form-section__meet form-section__meet--long form-section__meet--longer" type="text" placeholder="  Петр" name="name" >
               </div>
               <div class="form-section__field">
                 <label for="surname" class="form-section__label">Фамилия<sup>*</sup></label>
-                <input class="form-section__meet form-section__meet--long" type="text" placeholder="  Иванов" id="surname" required>
+                <input class="form-section__meet form-section__meet--long" type="text" placeholder="  Иванов" name="surname">
               </div>
               <div class="form-section__field">
                 <label for="middle-name" class="form-section__label">Отчество</label>
-                <input class="form-section__meet form-section__meet--long" type="text" placeholder="  Александрович" id="middle-name" required>
+                <input class="form-section__meet form-section__meet--long" type="text" placeholder="  Александрович" name="middle-name">
               </div>
             </div>
             <div class="form-section__item form-section__contact">
@@ -72,10 +72,10 @@
               <div class="form-section__field--contact">
                 <div class="form-section__field">
                   <label for="phone" class="form-section__label">
-                    <span class="form-section__required"><span class="form-section__desctop">Контактный</span> телефон<sup>*</sup></span>:
+                    <span class="form-section__required"><span class="form-section__desktop">Контактный</span> телефон<sup>*</sup></span>:
                   </label>
                   <div class="form-section__wrap">
-                    <input class="form-section__contact" type="text" placeholder="  Введите телефон" id="phone" required>
+                    <input class="form-section__contact" type="text" placeholder="  Введите телефон" name="phone" >
                     <div class="form-section__icon form-section__icon--phone"></div>
                   </div>
                 </div>
@@ -84,7 +84,7 @@
                     <span class="form-section__required">Электронная почта<sup>*</sup></span>:
                   </label>
                   <div class="form-section__wrap">
-                    <input class="form-section__contact" type="text" placeholder="  Введите e-mail" id="email" required>
+                    <input class="form-section__contact" type="text" placeholder="  Введите e-mail" name="email" >
                     <div class="form-section__icon form-section__icon--email"></div>
                   </div>
                 </div>
@@ -181,25 +181,27 @@
       </div>
     </footer>
   </div>
-  <div class="modal modal__success">
-  <div class="modal__content">
-    <p class="modal__title">Ваш отзыв отправлен!</p>
-    <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-  </div>
-  <div class="modal__btn">
-    <a href="#" class="btn btn--modal">Закрыть окно</a>
-  </div>
-</div>
 
-<div class="modal modal__error">
-  <div class="modal__content">
-    <p class="modal__title">Что-то пошло не так!</p>
-    <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+  <div class="modal modal__success">
+    <div class="modal__content">
+      <p class="modal__title">Ваш отзыв отправлен!</p>
+      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    </div>
+    <div class="modal__btn modal__btn--close">
+      <a href="#" class="btn btn--modal">Закрыть окно</a>
+    </div>
   </div>
-  <div class="modal__btn">
-    <a href="#" class="btn btn--modal">Ок</a>
+
+  <div class="modal modal__error">
+    <div class="modal__content">
+      <p class="modal__title">Что-то пошло не так!</p>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+    <div class="modal__btn modal__btn--close">
+      <a href="#" class="btn btn--modal">Ок</a>
+    </div>
   </div>
-</div>
+
   <script src="js/modal.js"></script>
 </body>
 

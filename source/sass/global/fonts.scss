@@ -1,13 +1,13 @@
 @font-face {
   font-family: "pt sans", sans-serif;
-  src: local("PT_Sans-Web-Regular"), url("/fonts/ptsans.woff2") format("woff2"), url("/fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("/fonts/ptsans.woff") format("woff");
   font-weight: 400;
-  font-style: "pt sans", sans-serif;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "pt sans", sans-serif;
-  src: local("PT_Sans-Web-Bold"), url("/fonts/ptsansbold.woff2") format("woff2"), url("/fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("/fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
-  font-style: "pt sans", sans-serif;
+  font-style: normal;
 }

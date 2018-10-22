@@ -35,21 +35,30 @@
     }
 
     &__text {
-      padding-left: 7%;
-      padding-right: 7%;
+      padding-bottom: 40px;
       padding-top: 10px;
     }
   }
 }
 
 @media (min-width: 1200px) {
-  &__header {
-    padding: 58px 15% 38px;
-  }
-
   .review {
-    &__title {
-      margin-top: 55px;
+    padding: 0 10%;
+
+    &__header {
+      padding: 58px 15% 20px;
+    }
+
+    .review {
+      &__title {
+        margin-top: 55px;
+      }
+
+      &__text {
+        padding-left: 16%;
+        padding-right: 19%;
+        padding-bottom: 15px;
+      }
     }
   }
 }

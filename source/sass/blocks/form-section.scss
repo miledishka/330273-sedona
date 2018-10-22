@@ -6,7 +6,7 @@
     text-align: center;
   }
 
-  &__desctop {
+  &__desktop {
     display: inline-block;
   }
 
@@ -62,7 +62,7 @@
     border: none;
 
     &:hover {
-      background-color: #e5e5e5;
+      background-color: #ffffff;
     }
 
     &:focus {
@@ -373,7 +373,7 @@ input.form-section__contact[type="text"] {
     flex-wrap: wrap;
     box-sizing: border-box;
 
-    &__desctop {
+    &__desktop {
       display: inline-block;
     }
 
@@ -601,13 +601,12 @@ input.form-section__contact[type="text"] {
       padding-left: 80px;
     }
 
-    &__desctop {
+    &__desktop {
       display: none;
     }
 
     &__opinion {
       margin-top: 10px;
-      padding-left: 25px;
 
       .form-section__title {
         padding-left: 80px;
@@ -633,15 +632,20 @@ input.form-section__contact[type="text"] {
       display: flex;
       justify-content: space-between;
 
-      .form-section__field {
-        width: 40%;
+      .form-section__field:nth-child(1) {
+        padding: 0;
+        padding-left: 0;
+        width: 42%;
         display: inline-flex;
         white-space: nowrap;
+      }
 
-        input {
-          margin-left: 20px;
-          padding-left: 20px;
-        }
+      .form-section__field:nth-child(2) {
+        padding: 0;
+        padding-left: 0;
+        width: 50%;
+        display: inline-flex;
+        white-space: nowrap;
       }
     }
 
@@ -659,10 +663,18 @@ input.form-section__contact[type="text"] {
     &__icon {
       content: "";
       position: absolute;
-      right: -20px;
+      right: 0;
     }
 
-    &__field--landmarks:nth-child(1),
+    &__field--contact label {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+
+    &__field--landmarks:nth-child(1) {
+      padding-left: 0;
+    }
+
     &__field--landmarks:nth-child(4) {
       padding-left: 25px;
     }
