@@ -67,6 +67,14 @@
     bottom: 40px;
   }
 
+  .video-content__svg svg:hover {
+    fill: #333333;
+  }
+
+  .video-content__svg svg:active {
+    fill: $bg-gray;
+  }
+
   &__btn {
     margin-top: 5px;
   }
@@ -141,6 +149,14 @@
       svg {
         fill: #ffffff;
       }
+    }
+
+    &__svg svg:hover {
+      fill: #333333;
+    }
+
+    &__svg svg:active {
+      fill: #c1c1c1;
     }
 
     &__header-begin--icon {

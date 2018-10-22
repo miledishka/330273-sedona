@@ -6,6 +6,10 @@
     text-align: center;
   }
 
+  &__desctop {
+    display: inline-block;
+  }
+
   &__item:nth-child(3) {
     border-right: 1px solid #e5e5e5;
   }
@@ -53,7 +57,6 @@
   }
 
   &__contact {
-    background-color: $bg-input;
     font: 700 18px/26px $ptsans;
     color: $text-black;
     border: none;
@@ -370,6 +373,10 @@ input.form-section__contact[type="text"] {
     flex-wrap: wrap;
     box-sizing: border-box;
 
+    &__desctop {
+      display: inline-block;
+    }
+
     &__title {
       font-size: 21px;
       margin: 0;
@@ -592,6 +599,10 @@ input.form-section__contact[type="text"] {
     &__intro {
       margin-top: 10px;
       padding-left: 80px;
+    }
+
+    &__desctop {
+      display: none;
     }
 
     &__opinion {
