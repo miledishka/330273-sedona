@@ -5,31 +5,30 @@
   background: $bg-blue;
   display: inline-block;
   vertical-align: top;
-  margin: 0 6px 0 auto;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 
-  &__btn:hover {
-    fill: #81b3d2;
+  &:hover {
+    background-color: $blue-dark;
+  }
+
+  &:active {
+    background-color: $blue-dark;
+  }
+
+  &--icon {
+    fill: $bg-white;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
     position: absolute;
-    left: 0;
-    width: 27px;
-    height: 34px;
   }
 
-  &__btn:active {
-    background-color: #5496bd;
+  &--icon:hover {
+    fill: $blue-deep;
   }
-}
 
-.social-btn--icon {
-  fill: $bg-white;
-  transform: translateX(-50%) translateY(-50%);
-  left: 50%;
-  top: 50%;
-  position: absolute;
-}
-
-.social-btn--icon:active {
-  opacity: 0.3;
+  &--icon:active {
+    opacity: 0.3;
+  }
 }

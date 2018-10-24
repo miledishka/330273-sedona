@@ -1,6 +1,8 @@
 .picture {
   width: 100%;
   position: relative;
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 20px 15px 20px;
 
   &__image {
     display: block;
@@ -10,38 +12,83 @@
     text-transform: uppercase;
     font: 700 14px/24px $ptsans;
     color: $bg-black;
+    padding: 0;
+    margin: 0;
   }
 
   &__text {
     font: 400 14px/24px $ptsans;
     color: $text-gray;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__footer {
+    margin-top: 12px;
   }
 
   &__count {
-    margin-left: 13px;
-    margin-top: 1px;
+    margin: 5px 0 0 10px;
     font: 700 14px/24px $ptsans;
     color: $text-black;
+    display: inline-block;
+    vertical-align: bottom;
   }
 
   &__link img {
     width: 100%;
   }
+
+  &__likes {
+    margin-top: 5px;
+  }
+
+  &__like {
+    fill: #b2b2b2;
+    cursor: pointer;
+    margin-top: 5px;
+  }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .picture {
+    padding: 0;
+
+    &--big &__footer {
+      padding-bottom: 15px;
+    }
+
+    &--big &__image {
+      margin-bottom: -10px;
+    }
+
+    &__count {
+      margin: 5px 0 0 5px;
+    }
+
     &--little {
+      position: relative;
       display: flex;
       flex-direction: column;
       width: 50%;
+      padding: 0;
+      margin: 0;
+    }
+
+    &--little &__footer {
+      padding-right: 30px;
     }
 
     &__footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+      display: flex;
+      justify-content: space-between;
       background: #f2f2f2;
+      padding: 20px 20px 10px 20px;
+      margin-top: -5px;
+    }
+
+    &__likes {
+      margin-top: 5px;
     }
   }
 }
@@ -56,6 +103,10 @@
       width: 100%;
     }
 
+    &__like {
+      fill: $bg-white;
+    }
+
     &__title,
     &__text,
     &__count {
@@ -67,8 +118,21 @@
     }
 
     &__footer {
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.4);
       display: flex;
+      position: absolute;
+      bottom: 5px;
+      width: 100%;
+      padding: 20px 0 10px 0;
+    }
+
+    &--big &__footer {
+      padding-bottom: 10px;
+    }
+
+    &--little &__footer {
+      padding-right: 0;
+      padding-bottom: 15px;
     }
 
     &__block {
@@ -76,8 +140,12 @@
       padding-left: 20px;
     }
 
-    &__likes {
+    &--big &__likes {
       padding-right: 20px;
+    }
+
+    &--little &__likes {
+      padding-right: 30px;
     }
   }
 }

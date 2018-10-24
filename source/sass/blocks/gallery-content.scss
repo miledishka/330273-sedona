@@ -1,8 +1,19 @@
 .gallery-content {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 25px;
+  margin-bottom: -15px;
 }
 
-.photo__like {
-  fill: #c0c0c0;
+@media (min-width: 768px) {
+  .gallery-content {
+    padding: 0 8%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery-content {
+    padding: 0;
+  }
 }

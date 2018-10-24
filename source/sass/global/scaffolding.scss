@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  line-height: 27px;
   font-family: "pt sans", "Arial", sans-serif;
   font-weight: 400;
   background-color: #ffffff;
@@ -19,7 +18,7 @@ img {
 
 .container {
   width: auto;
-  margin: 0 5%;
+  margin: 0;
 }
 
 .visually-hidden:not(:focus):not(:active) {

@@ -1,12 +1,17 @@
 .service {
   padding-inline-start: 0;
+  padding-top: 5px;
+  margin-bottom: 35px;
+  padding-left: 4px;
+  padding-right: 10px;
 
   &__title {
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
     color: $text-black;
     background: $bg-white;
-    padding: 8px 0 28px 0;
+    padding-top: 5px;
+    padding-bottom: 15px;
     margin-bottom: 0;
   }
 
@@ -20,13 +25,13 @@
   &__item {
     display: inline-flex;
     list-style-type: none;
-    padding: 20px 2.5% 20px;
+    padding: 7px 5.5% 0;
   }
 
   &__image {
     svg {
       fill: $bg-blue;
-      width: 40px;
+      width: 37px;
     }
   }
 
@@ -40,11 +45,27 @@
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 60px;
+    margin-top: 47px;
 
     &__item {
       flex-direction: column;
       text-align: center;
       width: 33.333333%;
+      padding-left: 35px;
+      font-size: 21px;
+    }
+
+    &__title {
+      padding: 0;
+      margin: 0;
+      padding-top: 24px;
+      font-size: 21px;
+      padding-bottom: 19px;
+    }
+
+    &__description {
+      padding: 0;
     }
 
     &__image {
@@ -55,6 +76,24 @@
 
     &__item--first {
       order: 1;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .service {
+    margin-bottom: 80px;
+    margin-top: 45px;
+
+    &__item {
+      padding-right: 6%;
+      padding-left: 5%;
+      margin: 0 auto;
+    }
+
+    &__image svg {
+      width: 76px;
+      height: 72px;
     }
   }
 }

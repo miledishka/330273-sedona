@@ -2,6 +2,7 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/scaffolding.scss";
+@import "global/visible.scss";
 @import "blocks/advantage.scss";
 @import "blocks/form-section.scss";
 @import "blocks/main-nav.scss";
@@ -17,4 +18,4 @@
 @import "blocks/page-header.scss";
 @import "blocks/gallery-content.scss";
 @import "blocks/map.scss";
-@import "global/visible.scss";
+@import "blocks/modal.scss";

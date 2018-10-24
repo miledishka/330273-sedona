@@ -1,4 +1,6 @@
 .review {
+  margin-bottom: 120px;
+
   &__title {
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
@@ -15,5 +17,48 @@
     position: relative;
     text-transform: uppercase;
     text-align: center;
+    padding: 23px 0 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .review {
+    padding: 0 8%;
+    margin-bottom: 60px;
+
+    &__header {
+      padding: 58px 15% 20px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      padding-bottom: 40px;
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .review {
+    padding: 0 10%;
+
+    &__header {
+      padding: 58px 15% 20px;
+    }
+
+    .review {
+      &__title {
+        margin-top: 55px;
+      }
+
+      &__text {
+        padding-left: 16%;
+        padding-right: 19%;
+        padding-bottom: 15px;
+      }
+    }
   }
 }

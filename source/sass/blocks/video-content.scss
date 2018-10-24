@@ -1,6 +1,7 @@
 .video-content {
   position: relative;
   text-align: center;
+  margin-bottom: 100px;
 
   &__footer {
     text-transform: uppercase;
@@ -9,153 +10,210 @@
   &__title {
     font: 700 18px/26px $ptsans;
     color: $text-black;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    padding: 30px 0 10px 0;
+  }
+
+  &__text {
+    font: 400 14px/24px $ptsans;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 
   &__video-clip {
-    background-image: url("../img/video-mobile@1x.jpg");
-    background-repeat: no-repeat;
+    margin-top: 35px;
     width: 100%;
-    height: 499px;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto 110px;
+    position: relative;
   }
 
   &__play {
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
-    left: 10%;
-    width: 80%;
-    height: 80px;
-    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 87%;
+    height: 45px;
+    bottom: 5px;
   }
 
   &__svg {
     background: #f2f2f2;
-    width: 80%;
-    height: 80px;
+    width: 100%;
+    height: 65px;
     display: flex;
-    left: 10%;
-    justify-content: space-between;
     box-sizing: border-box;
     align-items: center;
     position: absolute;
-    top: 615px;
+    top: 45px;
   }
 
   &__scale {
     background: rgba(255, 255, 255, 0.2);
-    width: 280px;
+    width: 100%;
     height: 4px;
-    top: 33px;
+    top: 20px;
     position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
   }
 
   &__bar {
     width: 10px;
     height: 10px;
+    top: 17px;
+    left: 55px;
     background: $bg-white;
     border-radius: 50%;
     position: absolute;
     bottom: 40px;
-    left: 127px;
   }
 
-  &__btn-begin {
-    padding-right: 280px;
-    padding-left: 20px;
+  .video-content__svg svg:hover {
+    fill: #333333;
   }
 
-  &__btn-end {
+  .video-content__svg svg:active {
+    fill: $bg-gray;
+  }
+
+  &__btn {
+    margin-top: 5px;
+  }
+
+  &__btn-repeat {
+    margin: 5px auto 0 25px;
+  }
+
+  &__btn-subtitles {
+    margin-right: 30px;
+  }
+
+  &__btn-fullscreen {
     padding-right: 20px;
   }
 
   &__svg-header {
     display: none;
   }
+
+  & img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
   .video-content {
-    &__video-clip {
-      background-image: url("../img/video-tablet@1x.jpg");
-      background-repeat: no-repeat;
-    }
+    margin-top: 80px;
+    margin-bottom: 40px;
 
     &__bar {
-      bottom: 53px;
-      left: 277px;
+      left: 210px;
+      top: 42px;
     }
 
-    &__scale {
-      width: 480px;
+    &__btn-repeat {
+      margin-left: 37px;
     }
 
-    &__play {
-      background: rgba(0, 0, 0, 0.6);
-      position: absolute;
-      transform: translateX(-50%);
-      left: 50%;
-      width: 100%;
-      height: 93px;
-      bottom: 0;
+    &__btn-fullscreen {
+      padding-right: 45px;
     }
 
     &__text {
+      padding: 0 22%;
       font: 400 14px/24px $ptsans;
       color: $text-gray;
     }
 
+    &__title {
+      font-size: 30px;
+      padding: 10px 0 5px 0;
+    }
+
+    &__scale {
+      width: 390px;
+      left: 95px;
+      top: 45px;
+    }
+
+    &__play {
+      height: 93px;
+      bottom: 0;
+      width: 85%;
+    }
+
+    &__video-clip {
+      margin-top: 70px;
+      line-height: 0;
+    }
+
     &__svg {
-      display: none;
+      background: none;
+      margin-top: -30px;
+
+      svg {
+        fill: #ffffff;
+      }
     }
 
-    &__svg-header {
-      width: 80%;
-      height: 80px;
-      display: flex;
-      left: 47%;
-      justify-content: space-between;
-      box-sizing: border-box;
-      align-items: center;
-      position: absolute;
+    &__svg svg:hover {
+      fill: #333333;
     }
-  }
 
-  .video-content__header-begin--icon {
-    font-size: 0;
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    fill: $bg-white;
-    transform: translateX(-50%) translateY(-50%);
-    margin-left: -530px;
-  }
+    &__svg svg:active {
+      fill: #c1c1c1;
+    }
 
-  .video-content__header-middle {
-    margin-bottom: 20px;
-    margin-left: -20px;
-  }
+    &__header-begin--icon {
+      font-size: 0;
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      fill: $bg-white;
+      transform: translateX(-50%) translateY(-50%);
+      margin-left: -530px;
+    }
 
-  .video-content__header-end {
-    margin-bottom: 20px;
-    margin-left: 80px;
+    &__header-middle {
+      margin-bottom: 20px;
+      margin-left: -20px;
+    }
+
+    &__header-end {
+      margin-bottom: 20px;
+      margin-left: 80px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .video-content {
-    &__video-clip {
-      background-image: url("../img/video-desktop@1x.jpg");
-      background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 120px;
+
+    &__text {
+      padding: 0 32%;
+    }
+
+    &__play {
+      width: 65%;
+    }
+
+    &__scale {
+      width: 540px;
+    }
+
+    &__btn-repeat {
+      margin: 0 auto 0 25px;
     }
 
     &__header-begin--icon {
       margin-left: -830px;
+    }
+
+    & img {
+      width: 65%;
     }
   }
 }
