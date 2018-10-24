@@ -60,16 +60,16 @@
     font: 700 18px/26px $ptsans;
     color: $text-black;
     border: none;
+  }
 
-    &:hover {
-      background-color: #ffffff;
-    }
+  & input.form-section__contact[type="text"]:hover {
+    background-color: #e5e5e5;
+  }
 
-    &:focus {
-      color: #000000;
-      background-color: #ffffff;
-      border: 4px solid #e5e5e5;
-    }
+  & input.form-section__contact[type="text"]:focus {
+    color: #000000;
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
   }
 
   &__field--contact &__field {
