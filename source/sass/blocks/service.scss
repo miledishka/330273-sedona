@@ -3,7 +3,7 @@
   padding-top: 5px;
   margin-bottom: 35px;
 
-  &__title {
+  .service__title {
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
     color: $text-black;
@@ -13,27 +13,27 @@
     margin-bottom: 0;
   }
 
-  &__text {
+  .service__text {
     text-transform: uppercase;
     font: 440 14px/21px $ptsans;
     color: $text-gray;
     margin: 0;
   }
 
-  &__item {
+  .service__item {
     display: inline-flex;
     list-style-type: none;
     padding: 7px 5.5% 0;
   }
 
-  &__image {
+  .service__image {
     svg {
       fill: $bg-blue;
       width: 37px;
     }
   }
 
-  &__description {
+  .service__description {
     padding-left: 10px;
   }
 }
@@ -46,15 +46,19 @@
     margin-bottom: 60px;
     margin-top: 47px;
 
-    &__item {
+    .service__item {
       flex-direction: column;
       text-align: center;
       width: 33.333333%;
       padding-left: 35px;
       font-size: 21px;
+
+      &--first {
+        order: 1;
+      }
     }
 
-    &__title {
+    .service__title {
       padding: 0;
       margin: 0;
       padding-top: 24px;
@@ -62,18 +66,14 @@
       padding-bottom: 19px;
     }
 
-    &__description {
+    .service__description {
       padding: 0;
     }
 
-    &__image {
+    .service__image {
       svg {
         width: 76px;
       }
-    }
-
-    &__item--first {
-      order: 1;
     }
   }
 }
@@ -83,13 +83,13 @@
     margin-bottom: 80px;
     margin-top: 45px;
 
-    &__item {
+    .service__item {
       padding-right: 6%;
       padding-left: 5%;
       margin: 0 auto;
     }
 
-    &__image svg {
+    .service__image svg {
       width: 76px;
       height: 72px;
     }

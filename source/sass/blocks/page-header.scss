@@ -1,5 +1,5 @@
 .page-header {
-  &__index {
+  .page-header__index {
     position: relative;
     width: 100%;
     background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -9,7 +9,7 @@
     background-size: cover;
   }
 
-  &__image {
+  .page-header__image {
     padding-top: 90px;
     padding-bottom: 83px;
     display: block;
@@ -20,7 +20,7 @@
     z-index: 0;
   }
 
-  &__small {
+  .page-header__small {
     display: block;
     margin: 0 auto;
     width: 229px;
@@ -29,11 +29,11 @@
     padding-bottom: 69px;
   }
 
-  &__logo-image {
+  .page-header__logo-image {
     z-index: 1;
   }
 
-  &__index::after {
+  .page-header__index::after {
     content: "";
     display: block;
     width: 100%;
@@ -47,7 +47,7 @@
     background-size: 322px 27px;
   }
 
-  &__logo {
+  .page-header__logo {
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -69,19 +69,19 @@
 
 @media (min-width: 768px) {
   .page-header {
-    &__image {
+    .page-header__image {
       width: 460px;
       height: 350px;
       padding-top: 78px;
       padding-bottom: 90px;
     }
 
-    &__small {
+    .page-header__small {
       height: 170px;
       width: 450px;
     }
 
-    &__index {
+    .page-header__index {
       position: relative;
       width: 100%;
       background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -103,7 +103,7 @@
       }
     }
 
-    &__logo-image {
+    .page-header__logo-image {
       position: absolute;
       top: 0;
       transform: translateX(-50%);
@@ -121,16 +121,16 @@
 
 @media (min-width: 1200px) {
   .page-header {
-    &__small {
+    .page-header__small {
       height: 180px;
     }
 
-    &__image {
+    .page-header__image {
       height: 350px;
       padding-top: 80px;
     }
 
-    &__index {
+    .page-header__index {
       position: relative;
       width: 100%;
       background-image: url("../img/bg-back-desktop@1x.jpg");

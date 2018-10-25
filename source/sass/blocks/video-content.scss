@@ -3,11 +3,11 @@
   text-align: center;
   margin-bottom: 100px;
 
-  &__footer {
+  .video-content__footer {
     text-transform: uppercase;
   }
 
-  &__title {
+  .video-content__title {
     font: 700 18px/26px $ptsans;
     color: $text-black;
     border-top: 1px solid #e5e5e5;
@@ -15,19 +15,19 @@
     padding: 30px 0 10px 0;
   }
 
-  &__text {
+  .video-content__text {
     font: 400 14px/24px $ptsans;
     padding-left: 7%;
     padding-right: 7%;
   }
 
-  &__video-clip {
+  .video-content__video-clip {
     margin-top: 35px;
     width: 100%;
     position: relative;
   }
 
-  &__play {
+  .video-content__play {
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
     left: 50%;
@@ -37,7 +37,7 @@
     bottom: 5px;
   }
 
-  &__svg {
+  .video-content__svg {
     background: #f2f2f2;
     width: 100%;
     height: 65px;
@@ -48,7 +48,7 @@
     top: 45px;
   }
 
-  &__scale {
+  .video-content__scale {
     background: rgba(255, 255, 255, 0.2);
     width: 100%;
     height: 4px;
@@ -56,7 +56,7 @@
     position: absolute;
   }
 
-  &__bar {
+  .video-content__bar {
     width: 10px;
     height: 10px;
     top: 17px;
@@ -75,27 +75,27 @@
     fill: $bg-gray;
   }
 
-  &__btn {
+  .video-content__btn {
     margin-top: 5px;
   }
 
-  &__btn-repeat {
+  .video-content__btn-repeat {
     margin: 5px auto 0 25px;
   }
 
-  &__btn-subtitles {
+  .video-content__btn-subtitles {
     margin-right: 30px;
   }
 
-  &__btn-fullscreen {
+  .video-content__btn-fullscreen {
     padding-right: 20px;
   }
 
-  &__svg-header {
+  .video-content__svg-header {
     display: none;
   }
 
-  & img {
+  .video-content img {
     width: 100%;
   }
 }
@@ -105,48 +105,48 @@
     margin-top: 80px;
     margin-bottom: 40px;
 
-    &__bar {
+    .video-content__bar {
       left: 210px;
       top: 42px;
     }
 
-    &__btn-repeat {
+    .video-content__btn-repeat {
       margin-left: 37px;
     }
 
-    &__btn-fullscreen {
+    .video-content__btn-fullscreen {
       padding-right: 45px;
     }
 
-    &__text {
+    .video-content__text {
       padding: 0 22%;
       font: 400 14px/24px $ptsans;
       color: $text-gray;
     }
 
-    &__title {
+    .video-content__title {
       font-size: 30px;
       padding: 10px 0 5px 0;
     }
 
-    &__scale {
+    .video-content__scale {
       width: 390px;
       left: 95px;
       top: 45px;
     }
 
-    &__play {
+    .video-content__play {
       height: 93px;
       bottom: 0;
       width: 85%;
     }
 
-    &__video-clip {
+    .video-content__video-clip {
       margin-top: 70px;
       line-height: 0;
     }
 
-    &__svg {
+    .video-content__svg {
       background: none;
       margin-top: -30px;
 
@@ -155,15 +155,15 @@
       }
     }
 
-    &__svg svg:hover {
+    .video-content__svg svg:hover {
       fill: #333333;
     }
 
-    &__svg svg:active {
+    .video-content__svg svg:active {
       fill: #c1c1c1;
     }
 
-    &__header-begin--icon {
+    .video-content__header-begin--icon {
       font-size: 0;
       width: 25px;
       height: 25px;
@@ -175,12 +175,12 @@
       margin-left: -530px;
     }
 
-    &__header-middle {
+    .video-content__header-middle {
       margin-bottom: 20px;
       margin-left: -20px;
     }
 
-    &__header-end {
+    .video-content__header-end {
       margin-bottom: 20px;
       margin-left: 80px;
     }
@@ -192,27 +192,27 @@
     margin-top: 30px;
     margin-bottom: 120px;
 
-    &__text {
+    .video-content__text {
       padding: 0 32%;
     }
 
-    &__play {
+    .video-content__play {
       width: 65%;
     }
 
-    &__scale {
+    .video-content__scale {
       width: 540px;
     }
 
-    &__btn-repeat {
+    .video-content__btn-repeat {
       margin: 0 auto 0 25px;
     }
 
-    &__header-begin--icon {
+    .video-content__header-begin--icon {
       margin-left: -830px;
     }
 
-    & img {
+    .video-content img {
       width: 65%;
     }
   }

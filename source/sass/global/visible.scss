@@ -1,14 +1,14 @@
 @media (max-width: 768px) {
   .visible {
-    &__mobile {
+    .visible__mobile {
       display: block;
     }
 
-    &__tablet {
+    .visible__tablet {
       display: none;
     }
 
-    &__desktop {
+    .visible__desktop {
       display: none;
     }
   }
@@ -16,15 +16,15 @@
 
 @media (min-width: 768px) {
   .visible {
-    &__mobile {
+    .visible__mobile {
       display: none;
     }
 
-    &__tablet {
+    .visible__tablet {
       display: block;
     }
 
-    &__desktop {
+    .visible__desktop {
       display: none;
     }
   }
@@ -32,15 +32,15 @@
 
 @media (min-width: 1200px) {
   .visible {
-    &__mobile {
+    .visible__mobile {
       display: none;
     }
 
-    &__tablet {
+    .visible__tablet {
       display: none;
     }
 
-    &__desktop {
+    .visible__desktop {
       display: block;
     }
   }

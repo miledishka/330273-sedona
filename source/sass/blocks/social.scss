@@ -22,13 +22,13 @@
     left: 50%;
     top: 50%;
     position: absolute;
-  }
 
-  .social-btn__icon:hover {
-    fill: $blue-deep;
-  }
+    &:hover {
+      fill: $blue-deep;
+    }
 
-  .social-btn__icon:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
