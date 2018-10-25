@@ -73,7 +73,7 @@ gulp.task("js", function () {
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
     .pipe(svgstore({
-    inlineSvg: true
+      inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("img"));
@@ -129,8 +129,8 @@ gulp.task("symbols-svg", function () {
   return gulp.src("build/img/icons-svg/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
-    inlineSvg: true
-  }))
+      inlineSvg: true
+    }))
     .pipe(rename("sprite.svg"))
     .pipe(svg2string())
     .pipe(gulp.dest("build/img"));
