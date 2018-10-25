@@ -78,13 +78,13 @@ gulp.task("sprite", function () {
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("img"));
 });
-
-// Создаём posthtml
-gulp.task("html", function () {
- return gulp.src("source/*.html")
-  .pipe(posthtml())
-  .pipe(gulp.dest("source"));
-});
+//
+// // Создаём posthtml
+// gulp.task("html", function () {
+//  return gulp.src("source/*.html")
+//   .pipe(posthtml())
+//   .pipe(gulp.dest("source"));
+// });
 
 // Создаём posthtml-include
 gulp.task("html", function () {

@@ -16,7 +16,7 @@
     background-color: $blue-dark;
   }
 
-  &--icon {
+  .social-btn__icon {
     fill: $bg-white;
     transform: translateX(-50%) translateY(-50%);
     left: 50%;
@@ -24,11 +24,11 @@
     position: absolute;
   }
 
-  &--icon:hover {
+  .social-btn__icon:hover {
     fill: $blue-deep;
   }
 
-  &--icon:active {
+  .social-btn__icon:active {
     opacity: 0.3;
   }
 }

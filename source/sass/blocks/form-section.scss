@@ -1,9 +1,24 @@
 .form-section {
+  input[type="text"] {
+    font: 700 18px/26px $ptsans;
+    border: 4px solid $bg-input;
+    outline: none;
+    background: $bg-input;
+    height: 50px;
+    color: $text-black;
+  }
+
   &__title {
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
     color: $text-black;
     text-align: center;
+  }
+
+  &__meet--long[type="text"] {
+    width: 100%;
+    margin-left: 20px;
+    padding-left: 5px;
   }
 
   &__desktop {
@@ -82,15 +97,15 @@
     border: 4px solid #e5e5e5;
   }
 
-  &__field--contact &__field {
+  &__wrapper &__field {
     display: block;
   }
 
-  &__field--contact &__field:nth-child(2) {
+  &__wrapper &__field:nth-child(2) {
     padding-top: 5px;
   }
 
-  &__field--contact label {
+  &__wrapper label {
     padding-left: 20px;
   }
 
@@ -193,16 +208,11 @@
     position: relative;
   }
 
-  &__submit {
-    text-align: center;
-    margin: 50px 0 40px 0;
-  }
-
   &__comment {
     width: 100%;
   }
 
-  &__field--contact {
+  &__wrapper {
     width: 100%;
 
     &__field {
@@ -325,31 +335,17 @@
     }
   }
 
-  &__line {
-    display: none;
+  &--error {
+    border: 4px solid #ff0000;
   }
 }
 
-input.form-section__meet--long[type="text"] {
-  width: 100%;
-  margin-left: 20px;
-  padding-left: 5px;
+.form-submit {
+  text-align: center;
+  margin: 50px 0 40px 0;
 }
 
-input[type="text"] {
-  font: 700 18px/26px $ptsans;
-  border: 4px solid $bg-input;
-  outline: none;
-  background: $bg-input;
-  height: 50px;
-  color: $text-black;
-}
-
-input.form-section__contact[type="text"] {
-  width: 100%;
-}
-
-.form-section__submit input[type="submit"] {
+.form-submit input[type="submit"] {
   background-color: $bg-blue;
   text-align: center;
   font: 400 21px/26px "pt sans", sans-serif;
@@ -364,17 +360,25 @@ input.form-section__contact[type="text"] {
   transform: translate(-50%, -50%);
 }
 
-.form-section__submit input[type="submit"]:hover {
+.form-submit input[type="submit"]:hover {
   background-color: $blue-dark;
 }
 
-.form-section__submit input[type="submit"]:active {
+.form-submit input[type="submit"]:active {
   background-color: $blue-dark;
   color: $blue-deep;
 }
 
-.form-section__submit input[type="submit"]:disabled {
+.form-submit input[type="submit"]:disabled {
   background-color: #e5e5e5;
+}
+
+.form-submit__line {
+  display: none;
+}
+
+input.form-section__contact[type="text"] {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -390,21 +394,6 @@ input.form-section__contact[type="text"] {
     &__title {
       font-size: 21px;
       margin: 0;
-    }
-
-    &__submit {
-      text-align: left;
-      margin-top: 0;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__submit input[type="submit"] {
-      position: relative;
-      transform: none;
-      min-width: 325px;
-      height: 60px;
-      margin-top: 10px;
     }
 
     &__icon {
@@ -517,17 +506,7 @@ input.form-section__contact[type="text"] {
       margin-bottom: 27px;
     }
 
-    &__line {
-      display: block;
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 400;
-      color: $text-gray;
-      line-height: 26px;
-      margin-top: 32px;
-    }
-
-    &__field--contact {
+    &__wrapper {
       margin-top: 25px;
       width: 100%;
 
@@ -536,7 +515,7 @@ input.form-section__contact[type="text"] {
       }
     }
 
-    .form-section__field--contact .form-section__field:nth-child(2) {
+    .form-section__wrapper .form-section__field:nth-child(2) {
       padding-top: 15px;
     }
 
@@ -602,6 +581,31 @@ input.form-section__contact[type="text"] {
     box-sizing: border-box;
     height: 60px;
   }
+
+  .form-submit {
+    text-align: left;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-submit__line {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: $text-gray;
+    line-height: 26px;
+    margin-top: 32px;
+  }
+
+  .form-submit input[type="submit"] {
+    position: relative;
+    transform: none;
+    min-width: 325px;
+    height: 60px;
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -632,11 +636,11 @@ input.form-section__contact[type="text"] {
       width: 100%;
     }
 
-    .form-section__field--contact .form-section__field:nth-child(2) {
+    .form-section__wrapper .form-section__field:nth-child(2) {
       padding-top: 0;
     }
 
-    &__field--contact {
+    &__wrapper {
       margin-top: 65px;
       flex-direction: row;
       display: flex;
@@ -676,7 +680,7 @@ input.form-section__contact[type="text"] {
       right: 0;
     }
 
-    &__field--contact label {
+    &__wrapper label {
       padding-left: 0;
       padding-right: 15px;
     }
@@ -703,13 +707,13 @@ input.form-section__contact[type="text"] {
     &__textarea {
       min-height: 160px;
     }
+  }
 
-    &__submit {
-      margin-top: 15px;
-    }
+  .form-submit {
+    margin-top: 15px;
+  }
 
-    &__submit input[type="submit"] {
-      min-width: 480px;
-    }
+  .form-submit input[type="submit"] {
+    min-width: 480px;
   }
 }
