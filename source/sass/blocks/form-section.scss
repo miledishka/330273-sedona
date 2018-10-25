@@ -1,5 +1,7 @@
 .form-section {
-  input[type="text"] {
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
     font: 700 18px/26px $ptsans;
     border: 4px solid $bg-input;
     outline: none;
@@ -87,11 +89,15 @@
     }
   }
 
-  & input.form-section__contact[type="text"]:hover {
+  & input.form-section__contact[type="text"]:hover,
+  & input.form-section__contact[type="number"]:hover,
+  & input.form-section__contact[type="email"]:hover {
     background-color: #e5e5e5;
   }
 
-  & input.form-section__contact[type="text"]:focus {
+  & input.form-section__contact[type="text"]:focus,
+  & input.form-section__contact[type="number"]:focus,
+  & input.form-section__contact[type="email"]:focus {
     color: #000000;
     background-color: #ffffff;
     border: 4px solid #e5e5e5;
@@ -377,7 +383,9 @@
   display: none;
 }
 
-input.form-section__contact[type="text"] {
+input.form-section__contact[type="text"],
+input.form-section__contact[type="number"],
+input.form-section__contact[type="email"] {
   width: 100%;
 }
 
@@ -576,7 +584,9 @@ input.form-section__contact[type="text"] {
     }
   }
 
-  input.form-section__contact[type="text"] {
+  input.form-section__contact[type="text"],
+  input.form-section__contact[type="number"],
+  input.form-section__contact[type="email"] {
     width: 100%;
     box-sizing: border-box;
     height: 60px;
