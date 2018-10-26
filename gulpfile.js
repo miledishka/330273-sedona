@@ -99,7 +99,7 @@ gulp.task("js-mini", function () {
     .pipe(gulp.dest("build/js"));
 });
 
- // Копирование html-файлов для живого сервера build
+// Копирование html-файлов для живого сервера build
 gulp.task("html:copy", function () {
   return gulp.src("*.html")
     .pipe(gulp.dest("build"));

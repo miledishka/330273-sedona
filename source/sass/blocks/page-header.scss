@@ -77,8 +77,10 @@
     }
 
     .page-header__small {
-      height: 170px;
-      width: 450px;
+      height: 80px;
+      width: 460px;
+      padding-top: 90px;
+      padding-bottom: 119px;
     }
 
     .page-header__index {
@@ -121,9 +123,6 @@
 
 @media (min-width: 1200px) {
   .page-header {
-    .page-header__small {
-      height: 180px;
-    }
 
     .page-header__image {
       height: 350px;

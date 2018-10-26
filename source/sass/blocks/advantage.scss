@@ -1,7 +1,6 @@
 .advantage {
   display: flex;
   flex-direction: column;
-  font-size: 0;
   margin: 0;
   position: relative;
   width: 100%;
@@ -239,9 +238,9 @@
       }
     }
 
-    &__info li:nth-child(1),
-    &__info li:nth-child(2) {
-      border-bottom-style: none;
+    .gray-panel__info li:nth-child(1),
+    .gray-panel__info li:nth-child(2) {
+      border-bottom: none;
     }
 
     .gray-panel__description {
