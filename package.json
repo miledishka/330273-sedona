@@ -23,7 +23,7 @@
     "gulp-svgstore": "7.0.0",
     "gulp-webp": "3.0.0",
     "npx": "10.2.0",
-    "posthtml-include": "1.2.0",
+    "posthtml-include": "^1.2.0",
     "run-sequence": "2.2.1",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
