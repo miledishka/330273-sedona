@@ -349,6 +349,7 @@
 }
 
 .form-submit input[type="submit"] {
+  display: block;
   background-color: $bg-blue;
   text-align: center;
   font: 400 21px/26px "pt sans", sans-serif;
@@ -357,10 +358,11 @@
   color: $text-white;
   text-transform: uppercase;
   padding: 16px 0;
-  min-width: 280px;
+  max-width: 460px;
   cursor: pointer;
   position: absolute;
   transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
 
 .form-submit input[type="submit"]:hover {
@@ -601,6 +603,7 @@ input.form-section__contact[type="email"] {
   }
 
   .form-submit input[type="submit"] {
+    margin-left: 0;
     position: relative;
     transform: none;
     min-width: 325px;

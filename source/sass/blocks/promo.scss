@@ -24,7 +24,7 @@
 
   .promo__text {
     text-transform: uppercase;
-    font: 440 14px/24px "pt sans", sans-serif;
+    font: 400 14px/24px "pt sans", sans-serif;
     color: $text-gray;
     padding-top: 5px;
     padding-left: 6%;
@@ -33,6 +33,7 @@
   }
 
   .promo__btn {
+    display: block;
     background-color: $bg-blue;
     text-decoration: none;
     text-align: center;
@@ -42,11 +43,10 @@
     color: $text-white;
     text-transform: uppercase;
     padding: 16px 0;
-    min-width: 280px;
+    max-width: 460px;
     cursor: pointer;
+    margin: 0 auto;
     margin-top: 30px;
-    position: absolute;
-    transform: translate(-50%, -50%);
 
     &:hover {
       background-color: $blue-dark;
