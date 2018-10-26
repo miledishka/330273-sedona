@@ -3,7 +3,7 @@
   padding-top: 45px;
   margin-bottom: 30px;
 
-  &__title {
+  .description__title {
     margin: 0 auto;
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
@@ -12,7 +12,7 @@
     padding-bottom: 28px;
   }
 
-  &__text {
+  .description__text {
     margin: 0 auto;
     text-transform: uppercase;
     font-size: 14px;

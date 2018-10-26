@@ -4,13 +4,13 @@
   text-align: center;
   padding: 25px 0 0;
 
-  &__title {
+  .media__title {
     font: 700 18px/26px $ptsans;
     color: $text-black;
     padding: 0 7%;
   }
 
-  &__text {
+  .media__text {
     font: 400 14px/24px $ptsans;
     color: $text-gray;
     margin: 0 auto;
@@ -23,12 +23,12 @@
   .media {
     padding: 55px 15% 60px;
 
-    &__text {
+    .media__text {
       width: 440px;
       padding-top: 10px;
     }
 
-    &__title {
+    .media__title {
       font-size: 30px;
     }
   }

@@ -8,7 +8,7 @@
   background-position: top center;
   background-repeat: no-repeat;
 
-  &__image {
+  .advantage__image {
     display: flex;
     flex-basis: auto;
     flex-grow: 1;
@@ -30,7 +30,7 @@
     z-index: 10;
   }
 
-  &__house {
+  .advantage__house {
     background-image: url("../img/main-city-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -39,11 +39,11 @@
     width: 100%;
   }
 
-  &__shift {
+  .advantage__shift {
     display: inline-block;
   }
 
-  &__first {
+  .advantage__first {
     background-image: url("../img/main-bridge-mobile@1x.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@
     width: 100%;
   }
 
-  &__city {
+  .advantage__city {
     text-transform: uppercase;
     background-color: $bg-blue;
     min-height: 190px;
@@ -78,7 +78,7 @@
     }
   }
 
-  &__place {
+  .advantage__place {
     text-transform: uppercase;
     font: 440 14px/19px $ptsans;
     color: $text-gray;
@@ -86,13 +86,13 @@
     width: 250px;
   }
 
-  &__title {
+  .advantage__title {
     text-transform: uppercase;
     font: 700 18px/21px $ptsans;
   }
 
-  &__text,
-  &__number {
+  .advantage__text,
+  .advantage__number {
     text-transform: uppercase;
     font: 440 14px/21px $ptsans;
     color: $text-gray;
@@ -104,7 +104,7 @@
 }
 
 .gray-panel {
-  &__info {
+  .gray-panel__info {
     width: 100%;
     box-sizing: border-box;
     position: relative;
@@ -120,11 +120,11 @@
     margin-bottom: 35px;
   }
 
-  &__shift {
+  .gray-panel__shift {
     display: none;
   }
 
-  &__place {
+  .gray-panel__place {
     text-transform: uppercase;
     font: 440 14px/18px $ptsans;
     color: $text-gray;
@@ -132,14 +132,14 @@
     width: 250px;
   }
 
-  &__title {
+  .gray-panel__title {
     margin-bottom: 10px;
     text-transform: uppercase;
     font: 700 18px/21px $ptsans;
   }
 
-  &__text,
-  &__number {
+  .gray-panel__text,
+  .gray-panel__number {
     text-transform: uppercase;
     font: 440 14px/21px $ptsans;
     color: $text-gray;
@@ -149,8 +149,8 @@
     }
   }
 
-  &__info li:nth-child(1),
-  &__info li:nth-child(2) {
+  .gray-panel__info li:nth-child(1),
+  .gray-panel__info li:nth-child(2) {
     border-bottom: 2px solid #e5e5e5;
     padding-bottom: 20px;
   }
@@ -158,11 +158,11 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .advantage {
-    &__first {
+    .advantage__first {
       background-image: url("../img/main-bridge-mobile@2x.jpg");
     }
 
-    &__house {
+    .advantage__house {
       background-image: url("../img/main-city-mobile@2x.jpg");
     }
   }
@@ -170,24 +170,24 @@
 
 @media (min-width: 768px) {
   .advantage {
-    &__wrapper {
+    .advantage__wrapper {
       display: flex;
     }
 
-    &__second {
+    .advantage__second {
       order: 1;
     }
 
-    &__shift {
+    .advantage__shift {
       display: inline-block;
     }
 
-    &__first {
+    .advantage__first {
       order: 0;
       background-image: url("../img/main-bridge-tablet@1x.jpg");
     }
 
-    &__house {
+    .advantage__house {
       background-image: url("../img/main-city-tablet@1x.jpg");
     }
 
@@ -195,39 +195,39 @@
       display: none;
     }
 
-    &__title {
+    .advantage__title {
       margin-top: 15px;
       font-size: 21px;
       line-height: 26px;
     }
 
-    &__city {
+    .advantage__city {
       padding-top: 30px;
     }
 
-    &__city__wrapper {
+    .advantage__city__wrapper {
       padding: 0 40px;
       margin: 0 auto;
       width: 180px;
     }
 
-    &__number {
+    .advantage__number {
       margin-top: 15px;
       margin-bottom: 10px;
     }
 
-    &__text {
+    .advantage__text {
       margin-top: 17px;
       margin-bottom: 10px;
     }
 
-    &__background-white {
+    .advantage__background-white {
       padding: 10px 8%;
     }
   }
 
   .gray-panel {
-    &__info {
+    .gray-panel__info {
       display: flex;
       justify-content: space-around;
       margin: 0;
@@ -244,22 +244,22 @@
       border-bottom-style: none;
     }
 
-    &__description {
+    .gray-panel__description {
       padding: 0 50px;
     }
 
-    &__shift {
+    .gray-panel__shift {
       display: block;
     }
 
-    &__title {
+    .gray-panel__title {
       margin-top: 25px;
       padding: 0 20px;
       font-size: 21px;
       line-height: 24px;
     }
 
-    &__place {
+    .gray-panel__place {
       width: auto;
       line-height: 21px;
       margin-top: 16px;
@@ -268,11 +268,11 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .advantage {
-      &__house {
+      .advantage__house {
         background-image: url("../img/main-city-tablet@2x.jpg");
       }
 
-      &__first {
+      .advantage__first {
         background-image: url("../img/main-bridge-tablet@2x.jpg");
       }
     }
@@ -281,61 +281,61 @@
 
 @media (min-width: 1200px) {
   .advantage {
-    &__title {
+    .advantage__title {
       margin-top: 25px;
     }
 
-    &__number {
+    .advantage__number {
       margin-top: 10px;
       line-height: 5px;
     }
 
-    &__text {
+    .advantage__text {
       margin-top: 30px;
       width: 230px;
     }
 
-    &__house {
+    .advantage__house {
       background-image: url("../img/main-city-desktop@1x.jpg");
     }
 
-    &__first {
+    .advantage__first {
       background-image: url("../img/main-bridge-desktop@1x.jpg");
     }
 
-    &__wrapper {
+    .advantage__wrapper {
       width: 100%;
     }
 
-    &__shift {
+    .advantage__shift {
       display: inline-block;
     }
 
-    &__city__wrapper {
+    .advantage__city__wrapper {
       width: 210px;
     }
 
-    &__city {
+    .advantage__city {
       width: 33.333333%;
     }
 
-    &__image {
+    .advantage__image {
       width: 66.6666667%;
     }
   }
 
   .gray-panel {
-    &__title {
+    .gray-panel__title {
       line-height: 26px;
       padding: 0 30px;
       margin-top: 28px;
     }
 
-    &__info {
+    .gray-panel__info {
       padding: 20px 0 28px 20px;
     }
 
-    &__description {
+    .gray-panel__description {
       margin-top: 0;
       padding-left: 55px;
     }
@@ -343,11 +343,11 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .advantage {
-      &__house {
+      .advantage__house {
         background-image: url("../img/main-city-desktop@2x.jpg");
       }
 
-      &__first {
+      .advantage__first {
         background-image: url("../img/main-bridge-desktop@2x.jpg");
       }
     }

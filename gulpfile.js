@@ -76,15 +76,8 @@ gulp.task("sprite", function () {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("build/img"));
 });
-//
-// // Создаём posthtml
-// gulp.task("html", function () {
-//  return gulp.src("source/*.html")
-//   .pipe(posthtml())
-//   .pipe(gulp.dest("source"));
-// });
 
 // Создаём posthtml-include
 gulp.task("html", function () {
@@ -93,25 +86,6 @@ gulp.task("html", function () {
       include()
     ]))
     .pipe(gulp.dest("source"));
-});
-
-// Gulp-sass для build
-gulp.task("style", function () {
-  gulp.src("sass/global/style.scss")
-   .pipe(plumber())
-   .pipe(sass())
-   .pipe(postcss([
-      autoprefixer({browsers: [
-      "last 2 versions"
-      ]}),
-      mqpacker({
-        sort: false
-      })
-    ]))
-   .pipe(gulp.dest("build/css"))
-   .pipe(minify())
-   .pipe(rename("style.min.css"))
-   .pipe(gulp.dest("build/css"));
 });
 
  // Сборка и минификация JS для build
@@ -123,17 +97,6 @@ gulp.task("js-mini", function () {
     .pipe(minifyjs())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"));
-});
-
-gulp.task("symbols-svg", function () {
-  return gulp.src("build/img/icons-svg/*.svg")
-    .pipe(svgmin())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(svg2string())
-    .pipe(gulp.dest("build/img"));
 });
 
  // Копирование html-файлов для живого сервера build
@@ -192,7 +155,7 @@ gulp.task("server", function () {
   server.init({
     server: "build/"
   });
-  gulp.watch("source/sass/**/*.sass", gulp.series("css"));
+  gulp.watch("source/sass/**/*.{sass,scss}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });

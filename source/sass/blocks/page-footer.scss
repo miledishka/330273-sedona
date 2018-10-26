@@ -5,7 +5,7 @@
   flex-direction: column;
   padding: 35px 5% 0;
 
-  &__hashtag {
+  .page-footer__hashtag {
     text-transform: uppercase;
     font: bold 21px/26px $ptsans;
     color: $text-black;
@@ -14,33 +14,33 @@
     padding-bottom: 37px;
   }
 
-  &__copyright {
+  .page-footer__copyright {
     text-transform: uppercase;
     font: 400 14px/26px $ptsans;
     margin-top: 22px;
   }
 
-  &__text {
+  .page-footer__text {
     margin: 0 auto;
     font: 400 14px/26px $ptsans;
   }
 
-  &__icon {
+  .page-footer__icon {
     font-size: 0;
     height: 53px;
     fill: $bg-black;
     cursor: pointer;
+
+    &:hover {
+      fill: $bg-blue;
+    }
+
+    &:active {
+      fill: $bg-gray;
+    }
   }
 
-  &__icon:hover {
-    fill: $bg-blue;
-  }
-
-  &__icon:active {
-    fill: $bg-gray;
-  }
-
-  &__link {
+  .page-footer__link {
     display: inline-flex;
     vertical-align: middle;
   }
@@ -59,17 +59,13 @@
     flex-direction: row;
     margin: 0 22px;
 
-    &__hashtag {
+    .page-footer__hashtag {
       margin-top: 12px;
     }
 
-    &__copyright {
+    .page-footer__copyright {
       margin-top: 0;
     }
-  }
-
-  .social-btn {
-    margin-right: 2px;
   }
 }
 
