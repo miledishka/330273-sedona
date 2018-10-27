@@ -3,40 +3,38 @@
   padding: 0;
   padding-inline-start: 0;
   margin-bottom: 30px;
+}
 
-  .service__title {
-    text-transform: uppercase;
-    font: 700 18px/26px $ptsans;
-    color: $text-black;
-    background: $bg-white;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    margin-bottom: 0;
-  }
+.service__title {
+  text-transform: uppercase;
+  font: 700 18px/26px $ptsans;
+  color: $text-black;
+  background: $bg-white;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+}
 
-  .service__text {
-    text-transform: uppercase;
-    font: 400 14px/21px $ptsans;
-    color: $text-gray;
-    margin: 0;
-  }
+.service__text {
+  text-transform: uppercase;
+  font: 400 14px/21px $ptsans;
+  color: $text-gray;
+  margin: 0;
+}
 
-  .service__item {
-    display: inline-flex;
-    list-style-type: none;
-    padding: 10px 7% 0;
-  }
+.service__item {
+  display: inline-flex;
+  list-style-type: none;
+  padding: 10px 7% 0;
+}
 
-  .service__image {
-    svg {
-      fill: $bg-blue;
-      width: 37px;
-    }
-  }
+.service__image svg {
+  fill: $bg-blue;
+  width: 37px;
+}
 
-  .service__description {
-    padding-left: 10px;
-  }
+.service__description {
+  padding-left: 10px;
 }
 
 @media (min-width: 768px) {
@@ -45,36 +43,34 @@
     justify-content: space-between;
     width: 100%;
     margin: 50px 0;
+  }
 
-    .service__item {
-      flex-direction: column;
-      text-align: center;
-      width: 33.333333%;
-      padding: 10px 45px;
-      font-size: 21px;
+  .service__item {
+    flex-direction: column;
+    text-align: center;
+    width: 33.333333%;
+    padding: 10px 45px;
+    font-size: 21px;
 
-      &--first {
-        order: 1;
-      }
+    &--first {
+      order: 1;
     }
+  }
 
-    .service__title {
-      padding: 0;
-      margin: 0;
-      padding-top: 24px;
-      font-size: 21px;
-      padding-bottom: 19px;
-    }
+  .service__title {
+    padding: 0;
+    margin: 0;
+    padding-top: 24px;
+    font-size: 21px;
+    padding-bottom: 19px;
+  }
 
-    .service__description {
-      padding: 0;
-    }
+  .service__description {
+    padding: 0;
+  }
 
-    .service__image {
-      svg {
-        width: 76px;
-      }
-    }
+  .service__image svg {
+    width: 76px;
   }
 }
 
@@ -82,10 +78,10 @@
   .service {
     margin-bottom: 75px;
     margin-top: 45px;
+  }
 
-    .service__image svg {
-      width: 76px;
-      height: 72px;
-    }
+  .service__image svg {
+    width: 76px;
+    height: 72px;
   }
 }

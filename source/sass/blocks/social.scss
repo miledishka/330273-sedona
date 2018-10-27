@@ -15,20 +15,20 @@
   &:active {
     background-color: $blue-dark;
   }
+}
 
-  .social-btn__icon {
-    fill: $bg-white;
-    transform: translateX(-50%) translateY(-50%);
-    left: 50%;
-    top: 50%;
-    position: absolute;
+.social-btn__icon {
+  fill: $bg-white;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
 
-    &:hover {
-      fill: $blue-deep;
-    }
+  &:hover {
+    fill: $blue-deep;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
