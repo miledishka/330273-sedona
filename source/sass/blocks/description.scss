@@ -3,7 +3,7 @@
   padding-top: 45px;
   margin-bottom: 30px;
 
-  .description__title {
+  &__title {
     margin: 0 auto;
     text-transform: uppercase;
     font: 700 18px/26px $ptsans;
@@ -25,20 +25,23 @@
 
 @media (min-width: 768px) {
   .description {
-    padding: 52px 15% 20px;
+    margin: 0 auto;
+    padding: 0;
+    padding: 50px 15% 50px;
   }
 
   .description__title {
+    margin: 0 auto;
+    text-decoration: none;
     font: 700 21px/26px $ptsans;
     color: $text-black;
-    padding: 0 7%;
-    padding-bottom: 28px;
+    padding-bottom: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .description {
-    padding: 5px 20% 18px;
+    padding: 5px 20% 50px;
   }
 
   .description__title {

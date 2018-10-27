@@ -106,6 +106,7 @@
 
 .gray-panel {
   .gray-panel__info {
+    margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
     position: relative;
@@ -114,10 +115,7 @@
     background: $bg-gray;
     display: inline-block;
     vertical-align: top;
-    padding-top: 18px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
+    padding: 18px 5px 15px;
     margin-bottom: 35px;
   }
 
@@ -153,7 +151,7 @@
   .gray-panel__info li:nth-child(1),
   .gray-panel__info li:nth-child(2) {
     border-bottom: 2px solid #e5e5e5;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 }
 
@@ -209,7 +207,7 @@
     .advantage__city__wrapper {
       padding: 0 40px;
       margin: 0 auto;
-      width: 180px;
+      width: 175px;
     }
 
     .advantage__number {
@@ -232,8 +230,7 @@
       display: flex;
       justify-content: space-around;
       margin: 0;
-      padding: 20px 0 10px 0;
-      padding-right: 10px;
+      padding: 20px 10px 0px 0;
 
       li {
         list-style-type: none;
@@ -333,7 +330,7 @@
     }
 
     .gray-panel__info {
-      padding: 20px 0 28px 20px;
+      padding: 20px 0 20px 20px;
     }
 
     .gray-panel__description {

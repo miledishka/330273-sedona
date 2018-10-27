@@ -1,5 +1,5 @@
 .review {
-  margin-bottom: 120px;
+  margin-bottom: 35px;
 
   .review__title {
     text-transform: uppercase;
@@ -44,6 +44,7 @@
 @media (min-width: 1200px) {
   .review {
     padding: 0 10%;
+    margin-bottom: 70px;
 
     .review__header {
       padding: 58px 15% 20px;

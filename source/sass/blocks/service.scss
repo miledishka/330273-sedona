@@ -1,7 +1,8 @@
 .service {
+  margin: 0 auto;
+  padding: 0;
   padding-inline-start: 0;
-  padding-top: 5px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   .service__title {
     text-transform: uppercase;
@@ -23,7 +24,7 @@
   .service__item {
     display: inline-flex;
     list-style-type: none;
-    padding: 7px 5.5% 0;
+    padding: 10px 7% 0;
   }
 
   .service__image {
@@ -43,14 +44,13 @@
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 60px;
-    margin-top: 47px;
+    margin: 50px 0;
 
     .service__item {
       flex-direction: column;
       text-align: center;
       width: 33.333333%;
-      padding-left: 35px;
+      padding: 10px 45px;
       font-size: 21px;
 
       &--first {
@@ -80,14 +80,8 @@
 
 @media (min-width: 1200px) {
   .service {
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     margin-top: 45px;
-
-    .service__item {
-      padding-right: 6%;
-      padding-left: 5%;
-      margin: 0 auto;
-    }
 
     .service__image svg {
       width: 76px;
