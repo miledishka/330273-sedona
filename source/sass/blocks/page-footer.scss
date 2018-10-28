@@ -4,52 +4,52 @@
   display: flex;
   flex-direction: column;
   padding: 35px 5% 0;
+}
 
-  &__hashtag {
-    text-transform: uppercase;
-    font: bold 21px/26px $ptsans;
-    color: $text-black;
-    display: block;
-    text-decoration: none;
-    padding-bottom: 37px;
-  }
+.page-footer__hashtag {
+  text-transform: uppercase;
+  font: bold 21px/26px $ptsans;
+  color: $text-black;
+  display: block;
+  text-decoration: none;
+  padding-bottom: 37px;
+}
 
-  &__copyright {
-    text-transform: uppercase;
-    font: 400 14px/26px $ptsans;
-    margin-top: 22px;
-  }
+.page-footer__copyright {
+  text-transform: uppercase;
+  font: 400 14px/26px $ptsans;
+  margin-top: 22px;
+}
 
-  &__text {
-    margin: 0 auto;
-    font: 400 14px/26px $ptsans;
-  }
+.page-footer__text {
+  margin: 0 auto;
+  font: 400 14px/26px $ptsans;
+}
 
-  &__icon {
-    font-size: 0;
-    height: 53px;
-    fill: $bg-black;
-    cursor: pointer;
-  }
+.page-footer__icon {
+  font-size: 0;
+  height: 53px;
+  fill: $bg-black;
+  cursor: pointer;
 
-  &__icon:hover {
+  &:hover {
     fill: $bg-blue;
   }
 
-  &__icon:active {
+  &:active {
     fill: $bg-gray;
   }
+}
 
-  &__link {
-    display: inline-flex;
-    vertical-align: middle;
-  }
+.page-footer__link {
+  display: inline-flex;
+  vertical-align: middle;
+}
 
-  .copyright__text {
-    margin-right: 10px;
-    display: inline-flex;
-    vertical-align: middle;
-  }
+.copyright__text {
+  margin-right: 10px;
+  display: inline-flex;
+  vertical-align: middle;
 }
 
 @media (min-width: 768px) {
@@ -58,18 +58,14 @@
     justify-content: space-between;
     flex-direction: row;
     margin: 0 22px;
-
-    &__hashtag {
-      margin-top: 12px;
-    }
-
-    &__copyright {
-      margin-top: 0;
-    }
   }
 
-  .social-btn {
-    margin-right: 2px;
+  .page-footer__hashtag {
+    margin-top: 12px;
+  }
+
+  .page-footer__copyright {
+    margin-top: 0;
   }
 }
 

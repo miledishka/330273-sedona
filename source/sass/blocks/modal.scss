@@ -8,18 +8,9 @@
   transform: translateX(-50%);
   position: fixed;
   padding: 20px;
-  top: 50%;
+  top: 30%;
   left: 50%;
   z-index: 10;
-}
-
-.modal.active {
-  display: block;
-}
-
-.btn--modal {
-  text-decoration: none;
-  color: $text-white;
 }
 
 .modal__success {
@@ -30,14 +21,6 @@
 .modal__error {
   left: 50%;
   top: 150px;
-}
-
-.modal-content {
-  padding: 40px;
-  margin: 0;
-  font-size: 24px;
-  line-height: 28px;
-  color: #323232;
 }
 
 .modal__title {
@@ -69,9 +52,26 @@
   margin: 0 auto;
   background-color: $bg-blue;
   cursor: pointer;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
 }
 
-.modal__btn:focus {
-  border: none;
-  outline: none;
+.modal.active {
+  display: block;
+}
+
+.btn--modal {
+  text-decoration: none;
+  color: $text-white;
+}
+
+.modal-content {
+  padding: 40px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
 }

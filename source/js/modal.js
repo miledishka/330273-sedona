@@ -1,13 +1,6 @@
 var form = document.querySelector("#review__form");
 var closeButtons = document.querySelectorAll(".modal__btn--close");
 
-//
-// window.addEventListener("keydown", function (evt) {
-//   if (evt.keyCode === 27 && modal.classList.contains("active")) {
-//     toggleModal("modal");
-//   }
-// });
-
 var formSubmitHandler = function (evt) {
   evt.preventDefault();
 
@@ -22,12 +15,30 @@ var formSubmitHandler = function (evt) {
   modalSuccess.classList.remove("active");
   modalError.classList.remove("active");
 
-  if (!name.value || !email.value || !phone.value || !surname.value) {
-    modalError.classList.add('active');
-  } else {
+  var fieldsStatus = [];
+
+  [name, email, phone, surname].forEach(function(field) {
+    field.classList.remove('form-section--error');
+
+    if (!field.value) {
+      field.classList.add('form-section--error');
+      fieldsStatus.push(true);
+    } else {
+      fieldsStatus.push(false);
+    }
+  });
+
+  var formValid = fieldsStatus.filter(function (el) {
+    return el;
+  }).length === 0;
+
+  if (formValid) {
     modalSuccess.classList.add('active');
+  } else {
+    modalError.classList.add('active');
   }
 };
+
 var closeModal = function(evt) {
   evt.target.closest(".modal").classList.remove("active");
 };

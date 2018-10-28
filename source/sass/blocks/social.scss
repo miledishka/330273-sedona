@@ -6,7 +6,7 @@
   display: inline-block;
   vertical-align: top;
   position: relative;
-  margin-bottom: 8px;
+  margin: 2px 6px 8px 0;
 
   &:hover {
     background-color: $blue-dark;
@@ -15,20 +15,20 @@
   &:active {
     background-color: $blue-dark;
   }
+}
 
-  &--icon {
-    fill: $bg-white;
-    transform: translateX(-50%) translateY(-50%);
-    left: 50%;
-    top: 50%;
-    position: absolute;
-  }
+.social-btn__icon {
+  fill: $bg-white;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
 
-  &--icon:hover {
+  &:hover {
     fill: $blue-deep;
   }
 
-  &--icon:active {
+  &:active {
     opacity: 0.3;
   }
 }

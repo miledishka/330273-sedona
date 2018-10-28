@@ -3,34 +3,34 @@
   text-transform: uppercase;
   text-align: center;
   padding: 25px 0 0;
+}
 
-  &__title {
-    font: 700 18px/26px $ptsans;
-    color: $text-black;
-    padding: 0 7%;
-  }
+.media__title {
+  font: 700 18px/26px $ptsans;
+  color: $text-black;
+  padding: 0 7%;
+}
 
-  &__text {
-    font: 400 14px/24px $ptsans;
-    color: $text-gray;
-    margin: 0 auto;
-    padding-top: 15px;
-    width: 270px;
-  }
+.media__text {
+  font: 400 14px/24px $ptsans;
+  color: $text-gray;
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 270px;
 }
 
 @media (min-width: 768px) {
   .media {
     padding: 55px 15% 60px;
+  }
 
-    &__text {
-      width: 440px;
-      padding-top: 10px;
-    }
+  .media__text {
+    width: 440px;
+    padding-top: 10px;
+  }
 
-    &__title {
-      font-size: 30px;
-    }
+  .media__title {
+    font-size: 30px;
   }
 }
 

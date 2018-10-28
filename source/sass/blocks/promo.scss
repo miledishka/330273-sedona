@@ -12,100 +12,99 @@
   font-weight: 400;
   text-transform: uppercase;
   min-width: 320px;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
+}
 
-  &__title {
-    text-transform: uppercase;
-    font: 700 21px/26px "pt sans", sans-serif;
-    color: $text-black;
-    padding: 0 7%;
-    margin: 0;
-  }
+.promo__title {
+  text-transform: uppercase;
+  font: 700 21px/26px "pt sans", sans-serif;
+  color: $text-black;
+  padding: 0 7%;
+  margin: 0;
+}
 
-  &__text {
-    text-transform: uppercase;
-    font: 440 14px/24px "pt sans", sans-serif;
-    color: $text-gray;
-    padding-top: 5px;
-    padding-left: 6%;
-    padding-right: 6%;
-    margin-bottom: 30px;
-  }
+.promo__text {
+  text-transform: uppercase;
+  font: 400 14px/24px "pt sans", sans-serif;
+  color: $text-gray;
+  padding-top: 5px;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-bottom: 30px;
+}
 
-  &__btn {
-    background-color: $bg-blue;
-    text-decoration: none;
-    text-align: center;
-    font: 400 21px/26px "pt sans", sans-serif;
-    border: none;
-    outline: none;
-    color: $text-white;
-    text-transform: uppercase;
-    padding: 16px 0;
-    min-width: 280px;
-    cursor: pointer;
-    margin-top: 30px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-  }
+.promo__btn {
+  display: block;
+  background-color: $bg-blue;
+  text-decoration: none;
+  text-align: center;
+  font: 400 21px/26px "pt sans", sans-serif;
+  border: none;
+  outline: none;
+  color: $text-white;
+  text-transform: uppercase;
+  padding: 16px 0;
+  max-width: 460px;
+  cursor: pointer;
+  margin: 30px 20px 0;
 
-  &__btn:hover {
+  &:hover {
     background-color: $blue-dark;
   }
 
-  &__btn:active {
+  &:active {
     background-color: $blue-dark;
     color: $blue-deep;
   }
 
-  &__btn:disabled {
+  &:disabled {
     background-color: #e5e5e5;
   }
+}
 
-  &__shift {
-    display: none;
-  }
+.promo__shift {
+  display: none;
 }
 
 @media (min-width: 768px) {
   .promo {
-    margin-bottom: 90px;
+    margin-bottom: 20px;
     padding: 56px 15% 38px;
+  }
 
-    &__title {
-      font: 700 30px/26px "pt sans", sans-serif;
-    }
+  .promo__title {
+    font: 700 30px/26px "pt sans", sans-serif;
+  }
 
-    &__text {
-      padding-top: 15px;
-    }
+  .promo__text {
+    padding-top: 15px;
+  }
 
-    &__btn {
-      min-width: 460px;
-      margin-top: 42px;
-    }
+  .promo__btn {
+    min-width: 460px;
+    margin: 42px auto 0;
+  }
 
-    &__shift {
-      display: block;
-    }
+  .promo__shift {
+    display: block;
   }
 }
 
 @media (min-width: 1200px) {
   .promo {
-    padding: 60px 15% 38px;
-
-    &__btn {
-      margin-top: 45px;
-    }
-
-    &__text {
-      width: 700px;
-      padding-top: 15px;
-    }
+    padding: 55px 15% 30px;
   }
 
-  &__shift {
-    display: none;
+  .promo__btn {
+    margin-top: 45px;
+  }
+
+  .promo__text {
+    width: 700px;
+    padding-top: 15px;
+  }
+
+  .promo__shift {
+    display: block;
   }
 }
