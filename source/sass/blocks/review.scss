@@ -11,14 +11,14 @@
 .review__text {
   font: 400 14px/24px $ptsans;
   color: $text-gray;
-  padding: 15px 0;
+  padding: 10px 0 5px;
 }
 
 .review__header {
   position: relative;
   text-transform: uppercase;
   text-align: center;
-  padding: 23px 0 5px;
+  padding: 25px 0 0px
 }
 
 @media (min-width: 768px) {

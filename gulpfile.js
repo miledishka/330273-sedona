@@ -122,16 +122,6 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-//  Обновляем сборку SVG-спрайта
-gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
-});
-
 // Обновляем работу с шаблонами
 gulp.task("html", function () {
  return gulp.src("source/*.html")
