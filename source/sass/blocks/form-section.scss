@@ -90,6 +90,11 @@
   }
 }
 
+.form-section input {
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
 .form-section input.form-section__contact[type="text"]:hover,
 .form-section input.form-section__contact[type="number"]:hover,
 .form-section input.form-section__contact[type="email"]:hover {
@@ -243,8 +248,8 @@
   width: 58px;
   height: 50px;
   background-color: $bg-gray;
-  right: -4px;
-  top: 4px;
+  right: -2px;
+  top: 0;
 }
 
 .form-section__icon--phone::after {
