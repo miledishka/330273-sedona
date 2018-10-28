@@ -276,6 +276,7 @@
 
 .form-section__opinion {
   display: inline-block;
+  margin-top: 15px;
 
   input[type="radio"] {
     display: none;
@@ -419,6 +420,7 @@ input.form-section__contact[type="email"] {
 
   .form-section__icon {
     right: 4px;
+    top: 5px;
   }
 
   .form-section__legend--line {
@@ -633,7 +635,7 @@ input.form-section__contact[type="email"] {
 
 @media (min-width: 1200px) {
   .form-section__intro {
-    margin-top: 10px;
+    margin-top: 15px;
     padding-left: 80px;
   }
 
@@ -670,6 +672,10 @@ input.form-section__contact[type="email"] {
     width: 42%;
     display: inline-flex;
     white-space: nowrap;
+  }
+
+  .form-section__wrap {
+    margin-top: 0;
   }
 
   .form-section__wrapper .form-section__field:nth-child(2) {
@@ -719,5 +725,13 @@ input.form-section__contact[type="email"] {
 
   .form-submit {
     margin-top: 15px;
+  }
+
+  .form-section__intro .form-section__field {
+    margin-bottom: 30px;
+  }
+
+  .form-section__item:nth-child(2) {
+    margin-bottom: 60px;
   }
 }
