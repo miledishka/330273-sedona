@@ -8,13 +8,13 @@
   background: $bg-gray;
   display: inline-block;
   vertical-align: top;
-  padding: 18px 5px 15px;
+  padding: 19px 5px 15px;
   margin-bottom: 35px;
 }
 
 .gray-panel__place {
   text-transform: uppercase;
-  font: 400 14px/18px $ptsans;
+  font: 400 14px/21px $ptsans;
   color: $text-gray;
   margin: 15px auto;
   width: 250px;
@@ -26,21 +26,10 @@
   font: 700 18px/21px $ptsans;
 }
 
-.gray-panel__text,
-.gray-panel__number {
-  text-transform: uppercase;
-  font: 400 14px/21px $ptsans;
-  color: $text-gray;
-
-  &--white {
-    color: $text-white;
-  }
-}
-
 .gray-panel__info li:nth-child(1),
 .gray-panel__info li:nth-child(2) {
   border-bottom: 2px solid #e5e5e5;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 768px) {

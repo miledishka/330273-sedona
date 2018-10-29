@@ -83,15 +83,15 @@
   margin-top: 5px;
 }
 
-.video-content__btn-repeat {
+.video-content__btn--repeat {
   margin: 5px auto 0 25px;
 }
 
-.video-content__btn-subtitles {
+.video-content__btn--subtitles {
   margin-right: 30px;
 }
 
-.video-content__btn-fullscreen {
+.video-content__btn--fullscreen {
   padding-right: 20px;
 }
 
@@ -114,11 +114,11 @@
     top: 42px;
   }
 
-  .video-content__btn-repeat {
+  .video-content__btn--repeat {
     margin-left: 37px;
   }
 
-  .video-content__btn-fullscreen {
+  .video-content__btn--fullscreen {
     padding-right: 45px;
   }
 
@@ -209,7 +209,7 @@
     width: 540px;
   }
 
-  .video-content__btn-repeat {
+  .video-content__btn--repeat {
     margin: 0 auto 0 25px;
   }
 
