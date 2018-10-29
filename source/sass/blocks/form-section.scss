@@ -12,6 +12,8 @@
 }
 
 .form-section__title {
+  display: inline-block;
+  padding: 0 20px;
   text-transform: uppercase;
   font: 700 18px/26px $ptsans;
   color: $text-black;
@@ -72,6 +74,11 @@
 
 .form-section__legend {
   margin-top: 20px;
+}
+
+.form-section__legend::after {
+  width: 100%;
+  align-items: center;
 }
 
 .form-section__contact {
@@ -288,7 +295,7 @@
     margin-right: 10px;
     position: absolute;
     left: 0;
-    bottom: -12px;
+    top: -12px;
     border-radius: 50%;
     background-color: $bg-input;
     width: 56px;
