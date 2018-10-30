@@ -3,6 +3,7 @@
   position: relative;
   border-top: 1px solid #e5e5e5;
   padding: 20px 20px 15px 20px;
+  margin: 0 auto;
 }
 
 .picture__image {
@@ -26,6 +27,7 @@
 
 .picture__footer {
   margin-top: 12px;
+  bottom: 0;
 }
 
 .picture__count {
@@ -42,6 +44,9 @@
 
 .picture__likes {
   margin-top: 5px;
+}
+
+.picture__link {
   display: block;
   font-size: 0;
 }

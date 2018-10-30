@@ -110,16 +110,21 @@
   }
 
   .video-content__bar {
-    left: 210px;
+    left: 200px;
     top: 42px;
   }
 
   .video-content__btn--repeat {
-    margin-left: 37px;
+    margin-left: 34px;
   }
 
   .video-content__btn--fullscreen {
-    padding-right: 45px;
+    margin-right: 20px;
+    margin-left: 0;
+  }
+
+  .video-content__btn--subtitles {
+    margin-right: 30px;
   }
 
   .video-content__text {
@@ -136,12 +141,12 @@
 
   .video-content__scale {
     width: 390px;
-    left: 95px;
+    left: 96px;
     top: 45px;
   }
 
   .video-content__play {
-    height: 93px;
+    height: 90px;
     bottom: 0;
     width: 100%;
   }
@@ -202,15 +207,24 @@
   }
 
   .video-content__play {
-    width: 65%;
+    width: 67%;
+    height: 97px;
+  }
+
+  .video-content__bar {
+    left: 210px;
   }
 
   .video-content__scale {
     width: 540px;
   }
 
+  .video-content__btn--fullscreen {
+    margin-right: 25px;
+  }
+
   .video-content__btn--repeat {
-    margin: 0 auto 0 25px;
+    margin: 0 auto 0 35px;
   }
 
   .video-content__header-begin--icon {
@@ -218,6 +232,6 @@
   }
 
   .video-content img {
-    width: 65%;
+    width: 67%;
   }
 }
