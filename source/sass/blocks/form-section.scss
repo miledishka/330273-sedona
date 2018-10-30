@@ -675,7 +675,7 @@ input.form-section__contact[type="email"] {
   }
 
   .form-section__wrapper {
-    margin-top: 75px;
+    margin-top: 70px;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -699,10 +699,6 @@ input.form-section__contact[type="email"] {
     white-space: nowrap;
   }
 
-  .form-section__item {
-    margin-bottom: 40px;
-  }
-
   .form-section__field--landmarks {
     width: 25%;
     padding-left: 0;
@@ -711,7 +707,7 @@ input.form-section__contact[type="email"] {
 
   .form-section__wrapper label {
     padding-left: 0;
-    padding-right: 15px;
+    padding-right: 20px;
   }
 
   .form-section__field--landmarks:nth-child(1) {
@@ -742,10 +738,6 @@ input.form-section__contact[type="email"] {
 
   .form-submit {
     margin-top: 15px;
-  }
-
-  .form-section__intro .form-section__field {
-    margin-bottom: 18px;
   }
 
   .form-section__item:nth-child(2) {
