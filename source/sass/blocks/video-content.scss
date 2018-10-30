@@ -26,9 +26,9 @@
 }
 
 .video-content__video-clip {
-  margin-top: 35px;
-  width: 100%;
   position: relative;
+  max-width: 800px;
+  margin: 75px auto 0;
 }
 
 .video-content__play {
