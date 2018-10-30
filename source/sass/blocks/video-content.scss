@@ -106,7 +106,7 @@
 @media (min-width: 768px) {
   .video-content {
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 
   .video-content__bar {
@@ -146,7 +146,7 @@
   }
 
   .video-content__play {
-    height: 90px;
+    height: 95px;
     bottom: 0;
     width: 100%;
   }
@@ -198,7 +198,7 @@
 
 @media (min-width: 1200px) {
   .video-content {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 100px;
   }
 
@@ -207,7 +207,6 @@
   }
 
   .video-content__play {
-    width: 67%;
     height: 97px;
   }
 
@@ -229,9 +228,5 @@
 
   .video-content__header-begin--icon {
     margin-left: -830px;
-  }
-
-  .video-content img {
-    width: 67%;
   }
 }

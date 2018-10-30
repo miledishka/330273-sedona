@@ -481,6 +481,10 @@ input.form-section__contact[type="email"] {
     margin: 0 0 40px;
   }
 
+  .form-section__field {
+    align-items: center;
+  }
+
   .form-section__opinion {
     width: 50%;
 
@@ -564,11 +568,6 @@ input.form-section__contact[type="email"] {
   .form-section__sight .form-section__title {
     margin: 0 auto;
     width: 300px;
-  }
-
-  .form-section__field {
-    min-height: 0;
-    padding-top: 0;
   }
 
   .form-section__wrap {
