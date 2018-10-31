@@ -23,6 +23,12 @@
   }
 }
 
+.advantage__text--white {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 290px;
+}
+
 .advantage__house {
   background-image: url("../img/main-city-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -69,7 +75,7 @@
 
   &--second {
     padding-top: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 }
 
@@ -152,10 +158,10 @@
     padding-top: 30px;
   }
 
-  .advantage__city__wrapper {
-    padding: 0 40px;
+  .advantage__blue {
+    padding: 0 42px;
     margin: 0 auto;
-    width: 175px;
+    width: 170px;
   }
 
   .advantage__number {
@@ -184,8 +190,17 @@
 }
 
 @media (min-width: 1200px) {
-  .advantage__title {
+  .advantage__blue {
+    padding: 0;
+    margin: 0;
     margin-top: 25px;
+    width: 100%;
+  }
+
+  .advantage__title {
+    padding: 0 42px;
+    margin: 0 auto;
+    width: 170px;
   }
 
   .advantage__number {
@@ -193,9 +208,13 @@
     line-height: 5px;
   }
 
-  .advantage__text {
+  .advantage__text--two {
     margin-top: 30px;
     width: 230px;
+  }
+
+  .advantage__text--one {
+    margin-top: 30px;
   }
 
   .advantage__house {
@@ -212,10 +231,6 @@
 
   .advantage__shift {
     display: inline-block;
-  }
-
-  .advantage__city__wrapper {
-    width: 210px;
   }
 
   .advantage__city {

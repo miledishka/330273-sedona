@@ -18,7 +18,7 @@
 .page-footer__copyright {
   text-transform: uppercase;
   font: 400 14px/26px $ptsans;
-  margin-top: 22px;
+  margin-top: 30px;
 }
 
 .page-footer__text {
@@ -65,12 +65,16 @@
   }
 
   .page-footer__copyright {
-    margin-top: 0;
+    margin-top: -3px;
   }
 }
 
 @media (min-width: 1200px) {
   .page-footer {
     margin: 0 60px;
+  }
+
+  .page-footer__hashtag {
+    margin-top: 10px;
   }
 }

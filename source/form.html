@@ -6,6 +6,8 @@
   <title>HTML Academy: Седона - оставьте свой отзыв!</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="/fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="/fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -17,16 +19,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link" aria-label="Переход на главную страницу" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="main-nav__link" href="photo.html">Фото и видео</a>
+              <a class="main-nav__link" aria-label="Переход на внутреннюю страницу" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+              <a class="main-nav__link" aria-label="Переход на внутреннюю страницу" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/15">HTML Academy</a>
+              <a class="main-nav__link" aria-label="Переход на сайт htmlacademy" href="https://up.htmlacademy.ru/adaptive/15">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -51,14 +53,14 @@
         <form id="review__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-section">
             <div class="form-section__item form-section__intro">
-              <div class="form-section__title font-title">Представьтесь:</div>
+              <div class="form-section__title form-section__title--longer font-title">Представьтесь:</div>
               <div class="form-section__field">
                 <label for="name" class="form-section__label">Имя<sup>*</sup></label>
-                <input class="form-section__meet form-section__meet--long form-section__meet--longer form-section__base" type="text" placeholder="Петр" name="name" id="name">
+                <input class="form-section__meet form-section__meet--long form-section__meet--longer form-section__base" type="text" placeholder="Петр" name="name" id="name" required="">
               </div>
               <div class="form-section__field">
                 <label for="surname" class="form-section__label">Фамилия<sup>*</sup></label>
-                <input class="form-section__meet form-section__meet--long form-section__base" type="text" placeholder="Иванов" name="surname" id="surname">
+                <input class="form-section__meet form-section__meet--long form-section__base" type="text" placeholder="Иванов" name="surname" id="surname" required="">
               </div>
               <div class="form-section__field">
                 <label for="middle-name" class="form-section__label">Отчество</label>
@@ -75,7 +77,7 @@
                     <span class="form-section__required"><span class="form-section__desktop">Контактный</span> телефон<sup>*</sup></span>:
                   </label>
                   <div class="form-section__wrap">
-                    <input class="form-section__base form-section__contact" type="number" placeholder="Введите телефон" name="phone" id="phone">
+                    <input class="form-section__base form-section__contact" type="number" placeholder="Введите телефон" name="phone" id="phone" required="">
                     <div class="form-section__icon form-section__icon--phone"></div>
                   </div>
                 </div>
@@ -84,7 +86,7 @@
                     <span class="form-section__required">Электронная почта<sup>*</sup></span>:
                   </label>
                   <div class="form-section__wrap">
-                    <input class="form-section__base form-section__contact" type="email" placeholder="Введите e-mail" name="email" id="email">
+                    <input class="form-section__base form-section__contact" type="email" placeholder="Введите e-mail" name="email" id="email" required="">
                     <div class="form-section__icon form-section__icon--email"></div>
                   </div>
                 </div>
@@ -92,19 +94,19 @@
             </div>
             <div class="form-section__item form-section__opinion">
               <div class="form-section__legend form-section__legend--line">
-                <div class="form-section__title font-title">Ваше общее впечатление:</div>
+                <div class="form-section__title form-section__title--left font-title">Ваше общее впечатление:</div>
               </div>
               <div class="form-section__field form-section__field--impression">
                 <input class="form-section__impression" type="radio" name="impression" value="" id="positive" checked>
-                <label for="positive">Скорее положительное</label>
+                <label for="positive" tabindex="0">Скорее положительное</label>
               </div>
               <div class="form-section__field form-section__field--impression">
                 <input class="form-section__impression" type="radio" name="impression" value="" id="negative">
-                <label for="negative">Скорее отрицательное</label>
+                <label for="negative" tabindex="0">Скорее отрицательное</label>
               </div>
               <div class="form-section__field form-section__field--impression">
                 <input class="form-section__impression" type="radio" name="impression" value="" id="neutral">
-                <label for="neutral">Затрудняюсь ответить</label>
+                <label for="neutral" tabindex="0">Затрудняюсь ответить</label>
               </div>
             </div>
             <div class="form-section__item form-section__sight">
@@ -114,19 +116,19 @@
               <div class="form-section__landmarks">
                 <div class="form-section__field form-section__field--landmarks">
                   <input class="form-section__landmarks" type="checkbox" name="attraction1" id="landmarks1" checked>
-                  <label for="landmarks1">Мост Дьявола</label>
+                  <label for="landmarks1" tabindex="0">Мост Дьявола</label>
                 </div>
                 <div class="form-section__field form-section__field--landmarks">
                   <input class="form-section__landmarks" type="checkbox" name="attraction2" id="landmarks2" checked>
-                  <label for="landmarks2">Гора-Колокол</label>
+                  <label for="landmarks2" tabindex="0">Гора-Колокол</label>
                 </div>
                 <div class="form-section__field form-section__field--landmarks">
                   <input class="form-section__landmarks" type="checkbox" name="attraction3" id="landmarks3" checked>
-                  <label for="landmarks3">Слайд-Парк</label>
+                  <label for="landmarks3" tabindex="0">Слайд-Парк</label>
                 </div>
                 <div class="form-section__field form-section__field--landmarks">
                   <input class="form-section__landmarks" type="checkbox" name="attraction4" id="landmarks4">
-                  <label for="landmarks4">Красные скалы</label>
+                  <label for="landmarks4" tabindex="0">Красные скалы</label>
                 </div>
               </div>
             </div>
@@ -140,30 +142,30 @@
             </div>
           </div>
           <div class="form-submit">
-            <input class="form-submit__btn" type="submit" value="Отправить отзыв" tabindex="0">
+            <input aria-label="Отправка формы" class="form-submit__btn" type="submit" value="Отправить отзыв" tabindex="0">
             <div class="form-submit__line">* — обязательные поля</div>
           </div>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__hashtag font-title" href="#">#visitsedona</a>
+      <a class="page-footer__hashtag font-title" aria-label="Переход на страницу инстаграмма" href="#">#visitsedona</a>
       <div class="social">
         <div class="social__item">
-          <a href="#" class="social-btn">
+          <a href="#" class="social-btn" aria-label="Sedona в twitter">
             <svg class="social-btn__icon" width="18" height="14"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
           </a>
-          <a href="#" class="social-btn">
+          <a href="#" class="social-btn" aria-label="Sedona в facebook">
             <svg class="social-btn__icon" width="9" height="18"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
           </a>
-          <a href="#" class="social-btn">
+          <a href="#" class="social-btn" aria-label="Sedona в yutube">
             <svg class="social-btn__icon" width="20" height="14"><use xlink:href="img/sprite.svg#icon-youtube"></use></svg>
           </a>
         </div>
       </div>
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
-        <a class="button page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="button page-footer__link" aria-label="Переход на страницу интенсива htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__icon" width="27" height="34"><use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use></svg>
         </a>
       </div>

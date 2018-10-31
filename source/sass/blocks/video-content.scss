@@ -26,17 +26,17 @@
 }
 
 .video-content__video-clip {
-  margin-top: 35px;
-  width: 100%;
   position: relative;
+  max-width: 800px;
+  margin: 40px auto 0;
 }
 
 .video-content__play {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 87%;
+  width: auto;
+  left: 20px;
+  right: 20px;
   height: 45px;
   bottom: 5px;
 }
@@ -83,15 +83,15 @@
   margin-top: 5px;
 }
 
-.video-content__btn-repeat {
+.video-content__btn--repeat {
   margin: 5px auto 0 25px;
 }
 
-.video-content__btn-subtitles {
+.video-content__btn--subtitles {
   margin-right: 30px;
 }
 
-.video-content__btn-fullscreen {
+.video-content__btn--fullscreen {
   padding-right: 20px;
 }
 
@@ -99,27 +99,28 @@
   display: none;
 }
 
-.video-content img {
-  width: 100%;
-}
-
 @media (min-width: 768px) {
   .video-content {
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 
   .video-content__bar {
-    left: 210px;
+    left: 200px;
     top: 42px;
   }
 
-  .video-content__btn-repeat {
-    margin-left: 37px;
+  .video-content__btn--repeat {
+    margin-left: 34px;
   }
 
-  .video-content__btn-fullscreen {
-    padding-right: 45px;
+  .video-content__btn--fullscreen {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+
+  .video-content__btn--subtitles {
+    margin-right: 30px;
   }
 
   .video-content__text {
@@ -136,13 +137,15 @@
 
   .video-content__scale {
     width: 390px;
-    left: 95px;
+    left: 96px;
     top: 45px;
   }
 
   .video-content__play {
-    height: 93px;
+    height: 95px;
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
   }
 
@@ -193,7 +196,7 @@
 
 @media (min-width: 1200px) {
   .video-content {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 100px;
   }
 
@@ -202,22 +205,26 @@
   }
 
   .video-content__play {
-    width: 65%;
+    height: 97px;
+  }
+
+  .video-content__bar {
+    left: 210px;
   }
 
   .video-content__scale {
     width: 540px;
   }
 
-  .video-content__btn-repeat {
-    margin: 0 auto 0 25px;
+  .video-content__btn--fullscreen {
+    margin-right: 25px;
+  }
+
+  .video-content__btn--repeat {
+    margin: 0 auto 0 35px;
   }
 
   .video-content__header-begin--icon {
     margin-left: -830px;
-  }
-
-  .video-content img {
-    width: 65%;
   }
 }

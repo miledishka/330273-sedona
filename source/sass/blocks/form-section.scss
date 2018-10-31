@@ -1,5 +1,5 @@
 .form-section {
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
 
 .form-section__base {
@@ -12,6 +12,8 @@
 }
 
 .form-section__title {
+  display: inline-block;
+  padding: 0 20px;
   text-transform: uppercase;
   font: 700 18px/26px $ptsans;
   color: $text-black;
@@ -19,10 +21,15 @@
   margin-top: 20px;
 }
 
+.form-section__title--longer {
+  padding-left: 70px;
+}
+
 .form-section__meet--long[type="text"] {
   width: 100%;
   margin-left: 20px;
-  padding-left: 20px;
+  padding-left: 15px;
+  height: 60px;
 }
 
 .form-section__desktop {
@@ -49,7 +56,6 @@
   background-color: $bg-input;
   font: 700 18px/26px $ptsans;
   color: $text-black;
-  border: none;
 
   &:hover {
     background-color: #e5e5e5;
@@ -72,7 +78,12 @@
 }
 
 .form-section__legend {
-  margin-top: 20px;
+  margin-top: 25px;
+}
+
+.form-section__legend::after {
+  width: 100%;
+  align-items: center;
 }
 
 .form-section__contact {
@@ -217,7 +228,7 @@
 
 .form-section__item {
   border-top: 1px solid $bg-gray;
-  padding: 0 20px 25px;
+  padding: 0 20px 0;
   position: relative;
 }
 
@@ -237,6 +248,7 @@
   position: relative;
   margin-top: 10px;
   width: 100%;
+  height: 60px;
 }
 
 .form-section__icon {
@@ -275,8 +287,8 @@
 }
 
 .form-section__opinion {
-  display: inline-block;
-  margin-top: 15px;
+  margin-top: -5px;
+  margin-bottom: 5px;
 
   input[type="radio"] {
     display: none;
@@ -289,7 +301,7 @@
     margin-right: 10px;
     position: absolute;
     left: 0;
-    bottom: -12px;
+    top: -12px;
     border-radius: 50%;
     background-color: $bg-input;
     width: 56px;
@@ -398,11 +410,16 @@ input.form-section__contact[type="email"] {
   width: 100%;
 }
 
+.form-section__emotion {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .form-section {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    margin-bottom: 20px;
   }
 
   .form-section__desktop {
@@ -464,7 +481,11 @@ input.form-section__contact[type="email"] {
     width: 100%;
     border: none;
     padding: 0;
-    margin: 0 0 40px;
+    margin: 0 0 70px;
+  }
+
+  .form-section__field {
+    align-items: center;
   }
 
   .form-section__opinion {
@@ -472,11 +493,11 @@ input.form-section__contact[type="email"] {
 
     .form-section__title {
       text-align: left;
-      margin-bottom: 70px;
+      margin-bottom: 38px;
     }
 
     .form-section__field {
-      margin-bottom: 45px;
+      margin-bottom: 7px;
       align-items: center;
     }
 
@@ -492,11 +513,8 @@ input.form-section__contact[type="email"] {
 
     .form-section__title {
       text-align: left;
-      margin-bottom: 55px;
-    }
-
-    .form-section__field {
-      margin-bottom: 20px;
+      padding-left: 0;
+      margin-bottom: 35px;
     }
   }
 
@@ -517,9 +535,10 @@ input.form-section__contact[type="email"] {
   }
 
   .form-section__item:nth-child(4) {
+    margin-top: 0;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
   }
 
   .form-section__item:last-child {
@@ -529,7 +548,6 @@ input.form-section__contact[type="email"] {
   }
 
   .form-section__wrapper {
-    margin-top: 25px;
     width: 100%;
 
     label {
@@ -541,14 +559,13 @@ input.form-section__contact[type="email"] {
     padding-top: 15px;
   }
 
+  .form-section__sight {
+    margin-top: 30px;
+  }
+
   .form-section__sight .form-section__title {
     margin: 0 auto;
     width: 300px;
-  }
-
-  .form-section__field {
-    min-height: 0;
-    padding-top: 0;
   }
 
   .form-section__wrap {
@@ -564,7 +581,6 @@ input.form-section__contact[type="email"] {
 
   .form-section__field--landmarks {
     box-sizing: border-box;
-    margin-top: 60px;
     width: 50%;
     padding-left: 50px;
   }
@@ -572,11 +588,13 @@ input.form-section__contact[type="email"] {
   .form-section__field--landmarks:nth-child(1),
   .form-section__field--landmarks:nth-child(3) {
     padding-left: 95px;
+    margin-top: 30px;
   }
 
   .form-section__field--landmarks:nth-child(2),
   .form-section__field--landmarks:nth-child(4) {
     padding-left: 30px;
+    margin-top: 30px;
   }
 
   .form-section__emotion {
@@ -631,6 +649,11 @@ input.form-section__contact[type="email"] {
     transform: none;
     height: 60px;
   }
+
+  .form-section__title--left {
+    padding-left: 0;
+    padding-right: 49px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -645,10 +668,6 @@ input.form-section__contact[type="email"] {
 
   .form-section__opinion {
     margin-top: 10px;
-
-    .form-section__title {
-      padding-left: 80px;
-    }
   }
 
   .form-section__contact {
@@ -661,7 +680,7 @@ input.form-section__contact[type="email"] {
   }
 
   .form-section__wrapper {
-    margin-top: 65px;
+    margin-top: 70px;
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -685,10 +704,6 @@ input.form-section__contact[type="email"] {
     white-space: nowrap;
   }
 
-  .form-section__item {
-    margin-bottom: 40px;
-  }
-
   .form-section__field--landmarks {
     width: 25%;
     padding-left: 0;
@@ -697,7 +712,7 @@ input.form-section__contact[type="email"] {
 
   .form-section__wrapper label {
     padding-left: 0;
-    padding-right: 15px;
+    padding-right: 20px;
   }
 
   .form-section__field--landmarks:nth-child(1) {
@@ -705,12 +720,15 @@ input.form-section__contact[type="email"] {
   }
 
   .form-section__field--landmarks:nth-child(4) {
-    padding-left: 25px;
+    padding-left: 35px;
   }
 
-  .form-section__field--landmarks:nth-child(2),
   .form-section__field--landmarks:nth-child(3) {
-    padding-left: 30px;
+    padding-left: 35px;
+  }
+
+  .form-section__field--landmarks:nth-child(2) {
+    padding-left: 25px;
   }
 
   .form-section__emotion {
@@ -727,11 +745,7 @@ input.form-section__contact[type="email"] {
     margin-top: 15px;
   }
 
-  .form-section__intro .form-section__field {
-    margin-bottom: 30px;
-  }
-
   .form-section__item:nth-child(2) {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 }
