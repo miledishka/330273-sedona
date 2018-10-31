@@ -34,7 +34,7 @@
 .video-content__play {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  width: 100%;
+  width: auto;
   left: 20px;
   right: 20px;
   height: 45px;
@@ -97,10 +97,6 @@
 
 .video-content__svg-header {
   display: none;
-}
-
-.video-content img {
-  width: 100%;
 }
 
 @media (min-width: 768px) {
