@@ -645,6 +645,11 @@ input.form-section__contact[type="email"] {
     transform: none;
     height: 60px;
   }
+
+  .form-section__title--left {
+    padding-left: 0;
+    padding-right: 49px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -659,10 +664,6 @@ input.form-section__contact[type="email"] {
 
   .form-section__opinion {
     margin-top: 10px;
-
-    .form-section__title {
-      padding-left: 80px;
-    }
   }
 
   .form-section__contact {

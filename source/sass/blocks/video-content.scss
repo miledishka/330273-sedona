@@ -28,13 +28,15 @@
 .video-content__video-clip {
   position: relative;
   max-width: 800px;
-  margin: 75px auto 0;
+  margin: 40px auto 0;
 }
 
 .video-content__play {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  width: 87%;
+  width: 100%;
+  left: 20px;
+  right: 20px;
   height: 45px;
   bottom: 5px;
 }
@@ -146,6 +148,8 @@
   .video-content__play {
     height: 95px;
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
   }
 
