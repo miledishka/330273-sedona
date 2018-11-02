@@ -193,7 +193,7 @@
     opacity: 0.4;
   }
 
-  input[type="checkbox"]:focus + label:before {
+  input[type="checkbox"]:focus + label::before {
     border: 18px solid #e5e5e5;
   }
 
@@ -351,7 +351,7 @@
     text-transform: none;
   }
 
-  input[type="radio"]:focus + label:before {
+  input[type="radio"]:focus + label::before {
     border: 18px solid #e5e5e5;
   }
 }
@@ -384,6 +384,10 @@
 
 .form-submit input[type="submit"]:hover {
   background-color: $blue-dark;
+}
+
+.form-submit input[type="submit"]:focus {
+  outline: none;
 }
 
 .form-submit input[type="submit"]:active {

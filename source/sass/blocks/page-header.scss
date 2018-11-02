@@ -44,6 +44,10 @@
 
 .page-header__logo-image {
   z-index: 1;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .page-header__logo {
