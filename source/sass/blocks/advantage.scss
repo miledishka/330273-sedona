@@ -59,15 +59,12 @@
   min-height: 190px;
   padding-top: 40px;
   padding-bottom: 25px;
-
-  &--white {
-    color: $text-white;
-    vertical-align: top;
-    box-sizing: border-box;
-    position: relative;
-    text-align: center;
-    line-height: 21px;
-  }
+  color: $text-white;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  line-height: 21px;
 
   &__wrapper {
     padding: 0 20px;
@@ -127,12 +124,12 @@
     }
   }
 
-  .advantage__wrapper {
-    display: flex;
+  .advantage__city--second {
+    order: 1;
   }
 
-  .advantage__second {
-    order: 1;
+  .advantage__wrapper {
+    display: flex;
   }
 
   .advantage__shift {
