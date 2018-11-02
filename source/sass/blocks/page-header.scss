@@ -46,6 +46,10 @@
   z-index: 1;
 }
 
+.page-header__logo:focus img {
+  outline: 2px solid $bg-blue;
+}
+
 .page-header__logo {
   display: flex;
   justify-content: center;

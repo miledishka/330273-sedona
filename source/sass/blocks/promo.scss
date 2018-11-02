@@ -52,6 +52,10 @@
     background-color: $blue-dark;
   }
 
+  &:focus {
+    outline: 1px solid $blue-dark;
+  }
+
   &:active {
     background-color: $blue-dark;
     color: $blue-deep;
