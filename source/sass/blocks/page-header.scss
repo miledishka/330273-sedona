@@ -44,10 +44,10 @@
 
 .page-header__logo-image {
   z-index: 1;
+}
 
-  &:focus {
-    outline: 2px solid red;
-  }
+.page-header__logo:focus img {
+  outline: 2px solid $bg-blue;
 }
 
 .page-header__logo {

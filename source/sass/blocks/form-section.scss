@@ -122,16 +122,22 @@
 .form-section__impression {
   font: 700 18px/26px $ptsans;
   color: $text-black;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form-section__landmarks {
   font: 700 18px/26px $ptsans;
   color: $text-black;
   display: inline-block;
-
-  input[type="checkbox"] {
-    display: none;
-  }
 
   label {
     display: inline-block;
@@ -191,10 +197,6 @@
     background-repeat: no-repeat;
     cursor: pointer;
     opacity: 0.4;
-  }
-
-  input[type="checkbox"]:focus + label::before {
-    border: 18px solid #e5e5e5;
   }
 
   input[type="checkbox"]:checked ~ label:disabled::before {
@@ -432,6 +434,7 @@ input.form-section__contact[type="email"] {
   .form-section__title {
     font-size: 21px;
     margin: 0;
+    position: relative;
   }
 
   .form-section__icon {
