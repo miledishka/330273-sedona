@@ -601,6 +601,10 @@ input.form-section__contact[type="email"] {
     justify-content: space-between;
   }
 
+  .form-section__landmarks:focus + label::before {
+    background-color: #e5e5e5;
+  }
+
   .form-section__field--landmarks {
     box-sizing: border-box;
     width: 50%;
