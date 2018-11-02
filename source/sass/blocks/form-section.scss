@@ -387,7 +387,7 @@
 }
 
 .form-submit input[type="submit"]:focus {
-  outline: none;
+  outline: 1px solid $blue-dark;
 }
 
 .form-submit input[type="submit"]:active {
