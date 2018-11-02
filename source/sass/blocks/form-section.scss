@@ -119,9 +119,20 @@
   padding-left: 20px;
 }
 
+input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .form-section__impression {
-  font: 700 18px/26px $ptsans;
-  color: $text-black;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -284,7 +295,16 @@
   margin-bottom: 5px;
 
   input[type="radio"] {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 
   label::before {
