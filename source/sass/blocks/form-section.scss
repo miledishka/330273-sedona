@@ -86,21 +86,6 @@
   align-items: center;
 }
 
-.form-section__contact {
-  font: 700 18px/26px $ptsans;
-  color: $text-black;
-
-  &:hover {
-    background-color: #ffffff;
-  }
-
-  &:focus {
-    color: #000000;
-    background-color: #ffffff;
-    border: 4px solid #e5e5e5;
-  }
-}
-
 .form-section input {
   box-sizing: border-box;
   padding-left: 20px;
